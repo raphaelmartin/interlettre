@@ -1,0 +1,1 @@
+define(["config","backbone"],function(e,t){return t.Collection.extend({url:e.config.urlRoot+"/api/newsletters/",parse:function(e){return e.items}})});

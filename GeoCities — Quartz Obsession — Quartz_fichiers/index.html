@@ -1,0 +1,527 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title></title><style type="text/css">body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, ".SFNSDisplay-Regular", Roboto, Helvetica, Tahoma, sans-serif; }
+
+a {
+  color: #168DD9;
+  text-decoration: none; }
+
+figure {
+  margin: 0; }
+  figure img {
+    width: 100%; }
+
+figcaption {
+  text-align: right; }
+
+table {
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  padding: 0; }
+
+#obsession-container {
+  max-width: 768px;
+  margin: auto;
+  background-color: #f1f1f1; }
+
+#obsession-header {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  width: 100%;
+  height: 330px; }
+
+#obsession-header-content {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff; }
+  #obsession-header-content img {
+    max-width: 200px; }
+
+#obsession-header-date {
+  font-size: 14px; }
+
+#obsession-sponsor {
+  color: #fff;
+  font-size: 10px;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  height: 30px;
+  line-height: 30px; }
+  #obsession-sponsor img {
+    vertical-align: middle;
+    width: 70px;
+    margin-left: 5px; }
+
+.obsession-hero {
+  margin: 0;
+  position: relative; }
+  .obsession-hero figcaption {
+    font-size: 8px;
+    text-align: right;
+    color: #bebebe;
+    padding: 0 6px 5px 0; }
+  .obsession-hero table {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+    .obsession-hero table td {
+      padding: 0 15%; }
+  .poll .obsession-hero td,
+  .quiz .obsession-hero td {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+.obsession-hero-title {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px; }
+
+.obsession-hero-image {
+  width: 100%;
+  padding-bottom: 56.56%;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+  .poll .obsession-hero-image,
+  .quiz .obsession-hero-image,
+  .video .obsession-hero-image {
+    padding: 0;
+    height: 200px; }
+    @media screen and (min-width: 376px) {
+      .poll .obsession-hero-image,
+      .quiz .obsession-hero-image,
+      .video .obsession-hero-image {
+        height: 282px; } }
+  .obsession-hero-image table {
+    width: 100%;
+    height: 100%; }
+    .obsession-hero-image table td {
+      text-align: center;
+      vertical-align: middle; }
+  .obsession-hero-image .play-button {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+.obsession-card {
+  margin: 20px 15px;
+  font-size: 15px;
+  max-width: 500px; }
+  .obsession-card:first-of-type {
+    position: relative;
+    margin-top: -25px; }
+  @media screen and (min-width: 531px) {
+    .obsession-card {
+      margin: 20px auto; } }
+
+.obsession-card-kicker {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bebebe;
+  margin-bottom: 5px; }
+
+.obsession-card-sponsor-label {
+  color: #F1A33F; }
+
+.obsession-card-title {
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 70%;
+  margin-top: 0; }
+  @media screen and (min-width: 600px) {
+    .obsession-card-title {
+      max-width: 50%; } }
+  .obsession-card-title hr {
+    width: 140px;
+    border-bottom: 4px solid #000;
+    margin: 10px 0 0 0; }
+
+.obsession-card-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px; }
+  .obsession-hero + .obsession-card-content {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .obsession-card-content img {
+    max-width: 100%; }
+  .obsession-card-content figure {
+    margin: 0; }
+  .obsession-card-content figcaption {
+    font-size: 8px;
+    text-align: right;
+    color: #bebebe; }
+  .obsession-card-content p {
+    margin: 1em 0;
+    line-height: 1.5; }
+    .obsession-card-content p.first {
+      margin-top: 0; }
+    .obsession-card-content p.last {
+      margin-bottom: 0; }
+  .obsession-card-content ul,
+  .obsession-card-content ol {
+    padding: 0 0 0 18px; }
+  .obsession-card-content li {
+    margin: 0 0 5px 0; }
+  .obsession-card-content blockquote {
+    margin: 1em 0;
+    font-family: Georgia, serif;
+    font-style: italic; }
+  .obsession-card-content .pull-quote {
+    margin: 1em 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #5D5D5D; }
+    .obsession-card-content .pull-quote .quote-line {
+      display: none; }
+
+.obsession-card-cta {
+  display: block;
+  background-color: #168DD9;
+  color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  padding: 18px 0;
+  text-decoration: none; }
+
+.obsession-card-share {
+  font-size: 12px;
+  color: #A7A7A7;
+  width: 100%;
+  padding: 6px 6px 0 6px; }
+  .obsession-card-share .share-buttons {
+    text-align: right; }
+    .obsession-card-share .share-buttons a {
+      margin-left: 10px; }
+
+.obsession-poll-answer,
+.obsession-quiz-answer {
+  display: block;
+  background-color: #fff;
+  margin: 0 15px 3px 15px;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer; }
+  .obsession-poll-answer:first-of-type,
+  .obsession-quiz-answer:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: -25px; }
+  .obsession-poll-answer:last-of-type,
+  .obsession-quiz-answer:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+
+.poll input {
+  display: none; }
+
+.quiz input {
+  display: none; }
+
+.quiz .obsession-quiz-message-correct,
+.quiz .obsession-quiz-message-wrong {
+  display: none; }
+
+.quiz .obsession-quiz-radio-correct:checked ~ .obsession-quiz-message-correct {
+  display: block; }
+
+.quiz .obsession-quiz-radio-wrong:checked ~ .obsession-quiz-message-wrong {
+  display: block; }
+
+.quiz .obsession-quiz-radio-wrong:checked ~ .obsession-quiz-answer.correct {
+  background: green; }
+
+.quiz .obsession-quiz-answer.correct:hover {
+  background: green; }
+  .quiz .obsession-quiz-answer.correct:hover ~ .obsession-quiz-message-correct {
+    display: block; }
+
+.quiz .obsession-quiz-answer.wrong:hover {
+  background: red; }
+  .quiz .obsession-quiz-answer.wrong:hover ~ .obsession-quiz-message-wrong {
+    display: block; }
+
+.obsession-quiz-message-correct,
+.obsession-quiz-message-wrong,
+.obsession-poll-message {
+  display: none;
+  font-size: 15px;
+  margin: 15px; }
+
+.obsession-quiz-fallback {
+  text-align: center;
+  color: #bebebe;
+  padding: 5px 0 0 0;
+  font-size: 10px; }
+  @media screen and (max-width: 600px) {
+    .obsession-quiz-fallback {
+      font-size: 8px; } }
+
+.obsession-quiz-footer-fallback {
+  text-align: left;
+  color: #bebebe;
+  padding: 10px 0;
+  font-size: 10px;
+  max-width: 460px;
+  margin: auto; }
+  @media screen and (max-width: 600px) {
+    .obsession-quiz-footer-fallback {
+      font-size: 8px; } }
+
+.obsession-gallery {
+  background-color: #fff;
+  text-align: center;
+  display: table;
+  width: 100%; }
+  .obsession-gallery input {
+    display: none; }
+  .obsession-gallery label {
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    max-width: 50px; }
+    .obsession-gallery label img {
+      width: 100%; }
+
+.obsession-gallery-images {
+  display: table-caption;
+  caption-side: top;
+  table-layout: fixed; }
+  .obsession-gallery-images img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+#obsession-footer {
+  background-color: #2B2B2B;
+  margin-top: 40px;
+  padding: 0 15px; }
+  @media screen and (min-width: 531px) {
+    #obsession-footer {
+      padding: 0; } }
+
+#obsession-share-footer {
+  background-color: #000;
+  padding: 0 15px; }
+  #obsession-share-footer table {
+    width: 100%;
+    color: #fff;
+    font-size: 12px; }
+  #obsession-share-footer .share-buttons {
+    text-align: right; }
+    #obsession-share-footer .share-buttons a {
+      margin-left: 10px; }
+  #obsession-share-footer .obsession-card-share {
+    padding: 0; }
+  @media screen and (min-width: 531px) {
+    #obsession-share-footer {
+      padding: 0; } }
+
+.obsession-footer-content {
+  max-width: 460px;
+  margin: auto;
+  font-size: 12px;
+  color: #fff;
+  padding: 15px 0; }
+  .obsession-footer-content p {
+    margin: 0 0 15px 0; }
+  .obsession-footer-content .last {
+    margin: 0; }
+
+.outlook-card {
+  margin-bottom: 20px;
+  background-color: #fff; }
+  .outlook-card .obsession-card-title {
+    max-width: none; }
+  .outlook-card hr {
+    display: none !important; }
+  .outlook-card td {
+    padding: 30px; }
+  .outlook-card h3 {
+    font-size: 15px; }
+  .outlook-card .warning {
+    color: #ccc;
+    font-size: 10px; }
+
+.outlook-cta {
+  background-color: #168DD9;
+  text-align: center;
+  width: 100%; }
+  .outlook-cta td {
+    padding: 30px; }
+  .outlook-cta a {
+    color: #fff;
+    text-decoration: none; }
+
+.hidden {
+  display: none;
+  mso-hide: all;
+  height: 0;
+  line-height: 0;
+  font-size: 0px;
+  overflow: hidden; }
+  .hidden table {
+    display: none !important;
+    mso-hide: all !important; }
+.play-button { background-image: url(https://s2.wp.com/wp-content/themes/vip/qz-api/lib/plugins/qz-obsession-email/images/play.png); }#quiz-3-answer-radio-correct:checked ~ .obsession-quiz-answer.correct { background: green; }
+#quiz-3-answer-radio-1:checked ~ #qz-3-answer-label-1 { background:red; }
+#quiz-3-answer-radio-2:checked ~ #qz-3-answer-label-2 { background:red; }
+#quiz-3-answer-radio-3:checked ~ #qz-3-answer-label-3 { background:red; }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473292 { background-image: url(https://quartz-obsession.quartz.work/vote?poll_id=9921635&answer_id=45473292) }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473293 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473293) }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473294 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473294) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473293 { background-image: url(https://quartz-obsession.quartz.work/vote?poll_id=9921635&answer_id=45473293) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473292 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473292) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473294 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473294) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473294 { background-image: url(https://quartz-obsession.quartz.work/vote?poll_id=9921635&answer_id=45473294) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473292 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473292) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473293 { background-image: url(https://quartz-obsession.quartz.work/result?poll_id=9921635&answer_id=45473293) }
+.vote-options { display: none; }
+#poll-12-vote-control:checked ~ .vote-btn { display: none; }
+#poll-12-vote-control:checked ~ .vote-options { display: block; }
+#obsession-header td { background: url(https://s0.wp.com/wp-content/themes/vip/qz-api/lib/plugins/qz-obsession-email/images/1x1-black.png); }
+.obsession-hero-image td { background: url(https://s2.wp.com/wp-content/themes/vip/qz-api/lib/plugins/qz-obsession-email/images/1x1-purple.png); }
+</style></head><body class="vsc-initialized"><!--[if mso | IE]><table width="600" bgcolor="#f1f1f1" align="center"><tr><td><![endif]--><div id="obsession-container"><table id="obsession-header" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/ezgif-com-resize-3.gif?w=640)"><tbody><tr><td id="obsession-header-content"><img src="a_data/logo-v2.png" alt="Quartz Obsession"><h1 id="obsession-header-title">GeoCities</h1><span id="obsession-header-date">January 20, 2018</span></td></tr></tbody></table><!--[if mso | IE]><table class="outlook-card"><tr><td><div class="obsession-card-content"><h2 class="obsession-card-title">In the beginning<hr /></h2><p class="first"><span style="font-weight:400;">Facebook: Where to begin with what it hath wrought? </span></p>
+<p><span style="font-weight:400;">Last week, the social media giant (</span><a href="https://www.nbcnews.com/tech/tech-news/facebook-living-breathing-crime-scene-says-one-former-manager-n837991"><span style="font-weight:400;">which has almost as many users as Christianity has followers</span></a><span style="font-weight:400;">) announced that it’s going old school, deprioritizing publisher- and brand-promoted posts in favor of more “quality interactions” between human beings. </span></p>
+<p><span style="font-weight:400;">For many critics, the correction is both overdue and underwhelming. “The short-term, dopamine-driven feedback loops we’ve created are destroying how society works,” Chamath Palihapitiya, formerly Facebook’s VP of user growth, said last fall. He’s </span><a href="https://www.theguardian.com/technology/2017/oct/05/smartphone-addiction-silicon-valley-dystopia"><span style="font-weight:400;">just one of the Silicon Valley insiders</span></a><span style="font-weight:400;"> who </span><a href="https://www.axios.com/sean-parker-unloads-on-facebook-god-only-knows-what-its-doing-to-our-childrens-brains-1513306792-f855e7b4-4e99-4d60-8d51-2775559c2671.html"><span style="font-weight:400;">have spoken out </span></a><span style="font-weight:400;">about the ways tech companies exploit people’s psychological vulnerabilities.</span></p>
+<p><span style="font-weight:400;">Facebook has also been snapping up companies like </span><a href="https://qz.com/1103725/facebook-bought-tbh-an-anonymous-polling-app-us-teens-are-obsessed-with/"><span style="font-weight:400;">tbh</span></a><span style="font-weight:400;">, which lets people send each other anonymous positive feedback. The fighting spirit of tbh can be traced to a different era: What if GeoCities, a famously positive web hosting service, had been the platform that took off instead? The web, and the world, might be a very different place indeed.</span></p>
+<p>🐦 <a href="http://twitter.com/home?status=An%20ode%20to%20GeoCities%20via%20%40qz%20Obsession%20http://qz.com/email/quartz-obsession/1182121%20@qz">Tweet about this! </a>👍 <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1182121&amp;quote=An%20ode%20to%20GeoCities%20via%20%40qz%20Obsession">Post this on Facebook!</a></p>
+<p class="last">🌐 <a href="https://qz.com/email/quartz-obsession/1184093/">View this email on the web</a></p>
+</div></td></tr></table><table class="outlook-cta"><tr><td><a href="https://qz.com/email/quartz-obsession/1184546/">Read the full email</a></td></tr></table><table class="outlook-card"><tr><td><h3>Why is my email truncated?</h3><p class="warning">The interactive elements of this email don't work with all email software. To get the full experience of the Quartz Obsession in your inbox, we recommend using Gmail or Apple Mail.</p></td></tr></table><![endif]--><!--[if mso | IE]><div class="hidden"><![endif]--><div class="first obsession-card auto"><div class="obsession-card-content"><h2 class="obsession-card-title">In the beginning<hr></h2><p class="first"><span style="font-weight:400;">Facebook: Where to begin with what it hath wrought? </span></p>
+<p><span style="font-weight:400;">Last week, the social media giant (</span><a href="https://www.nbcnews.com/tech/tech-news/facebook-living-breathing-crime-scene-says-one-former-manager-n837991" target="_blank"><span style="font-weight:400;">which has almost as many users as Christianity has followers</span></a><span style="font-weight:400;">)
+ announced that it’s going old school, deprioritizing publisher- and 
+brand-promoted posts in favor of more “quality interactions” between 
+human beings. </span></p>
+<p><span style="font-weight:400;">For many critics, the correction is 
+both overdue and underwhelming. “The short-term, dopamine-driven 
+feedback loops we’ve created are destroying how society works,” Chamath 
+Palihapitiya, formerly Facebook’s VP of user growth, said last fall. 
+He’s </span><a href="https://www.theguardian.com/technology/2017/oct/05/smartphone-addiction-silicon-valley-dystopia" target="_blank"><span style="font-weight:400;">just one of the Silicon Valley insiders</span></a><span style="font-weight:400;"> who </span><a href="https://www.axios.com/sean-parker-unloads-on-facebook-god-only-knows-what-its-doing-to-our-childrens-brains-1513306792-f855e7b4-4e99-4d60-8d51-2775559c2671.html" target="_blank"><span style="font-weight:400;">have spoken out </span></a><span style="font-weight:400;">about the ways tech companies exploit people’s psychological vulnerabilities.</span></p>
+<p><span style="font-weight:400;">Facebook has also been snapping up companies like </span><a href="https://qz.com/1103725/facebook-bought-tbh-an-anonymous-polling-app-us-teens-are-obsessed-with/" target="_blank"><span style="font-weight:400;">tbh</span></a><span style="font-weight:400;">,
+ which lets people send each other anonymous positive feedback. The 
+fighting spirit of tbh can be traced to a different era: What if 
+GeoCities, a famously positive web hosting service, had been the 
+platform that took off instead? The web, and the world, might be a very 
+different place indeed.</span></p>
+<p>🐦 <a href="http://twitter.com/home?status=An%20ode%20to%20GeoCities%20via%20%40qz%20Obsession%20http://qz.com/email/quartz-obsession/1182121%20@qz" target="_blank">Tweet about this! </a>👍 <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1182121&amp;quote=An%20ode%20to%20GeoCities%20via%20%40qz%20Obsession" target="_blank">Post this on Facebook!</a></p>
+<p class="last">🌐 <a href="https://qz.com/email/quartz-obsession/1184093/" target="_blank">View this email on the web</a></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">By the digits</div><p class="first"><a href="http://www.geocities.ws/NapaValley/2022/cities.html" target="_blank"><b>40:</b></a><span style="font-weight:400;"> “Neighborhoods” you could “live in” during GeoCities’ heyday</span></p>
+<p><a href="https://geocities.yahoo.co.jp/" target="_blank"><b>$4.44:</b></a><b> </b><span style="font-weight:400;">Current monthly price for a GeoCities Pro account through Yahoo! Japan</span></p>
+<p><a href="http://www.archiveteam.org/index.php?title=GeoCities_Project" target="_blank"><b>2MB:</b></a><b> </b><span style="font-weight:400;">Maximum size of GeoCities pages 20 years ago (about the size of an average gif today)</span></p>
+<p><a href="http://www.internetworldstats.com/emarketing.htm" target="_blank"><b>70 million:</b></a><span style="font-weight:400;"> Number of people online in 1997—the year GeoCities surpassed </span><a href="http://www.adweek.com/digital/the-history-of-social-media-from-1978-2012-infographic/" target="_blank"><span style="font-weight:400;">1 million users</span></a></p>
+<p class="last"><a href="https://qz.com/1103725/facebook-bought-tbh-an-anonymous-polling-app-us-teens-are-obsessed-with/" target="_blank"><b>$507 billion:</b></a> <span style="font-weight:400;">Current market cap of Facebook</span></p>
+</div></div><div class="obsession-card auto"><figure class="obsession-hero"><div class="obsession-hero-image" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/giphy-83.gif);"></div></figure><div class="obsession-card-content"><div class="obsession-card-kicker">Origin story</div><h2 class="obsession-card-title">The people in your neighborhood<hr></h2><p class="first"><span style="font-weight:400;">Like
+ a proto-social network, GeoCities was a hosting service that let users 
+build their own web pages but also organize into neighborhoods dedicated
+ to shared interests and identities. If you were into aliens, you’d 
+probably build your virtual home in “Area51.” If you were an art kid, 
+you’d go to “SoHo.” There were also neighborhoods for extreme sports 
+(“Pipeline”) and the LGBT community (“WestHollywood”)—one of the first 
+inclusive spaces online. </span></p>
+<p><span style="font-weight:400;">Even if you weren’t a member, you’d 
+probably recognize that infamous aesthetic: “Brimming with blinking, 
+moving, garishly colored text and animated dancing cats, GeoCities made 
+MySpace look like a bastion of elegance and restraint,” </span><a href="http://www.slate.com/articles/technology/technology/2009/10/how_geocities_invented_the_internet.html" target="_blank"><span style="font-weight:400;">is how Farhad Manjoo put it.</span></a></p>
+<p class="last"><span style="font-weight:400;">But at the time, all that
+ blinking signified something to users: maximum creative freedom, the 
+ability to build an online presence that expressed who you </span><i><span style="font-weight:400;">really</span></i><span style="font-weight:400;"> were, and the opportunity to connect with others like you.</span></p>
+</div></div><div class="obsession-card quiz"><figure class="obsession-hero"><div class="obsession-hero-image" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/geocities-welcome2.jpg?quality=80&amp;strip=all);"><table><tbody><tr><td><div class="obsession-card-kicker">Pop quiz</div><h2 class="obsession-hero-title">Which of these was not a GeoCities site of the day?</h2></td></tr></tbody></table></div></figure><input name="quiz-3" id="quiz-3-answer-radio-correct" class="obsession-quiz-radio-correct" type="radio"><input name="quiz-3" id="quiz-3-answer-radio-1" class="obsession-quiz-radio-wrong" type="radio"><input name="quiz-3" id="quiz-3-answer-radio-2" class="obsession-quiz-radio-wrong" type="radio"><input name="quiz-3" id="quiz-3-answer-radio-3" class="obsession-quiz-radio-wrong" type="radio"><label for="quiz-3-answer-radio-2" id="qz-3-answer-label-2" class="obsession-quiz-answer wrong">Divorced Dads</label><label for="quiz-3-answer-radio-3" id="qz-3-answer-label-3" class="obsession-quiz-answer wrong">Area 51 alien website generator</label><label for="quiz-3-answer-radio-1" id="qz-3-answer-label-1" class="obsession-quiz-answer wrong">The Official Cow-Tipping Homepage</label><label for="quiz-3-answer-radio-correct" class="obsession-quiz-answer correct">Kenny Rogers Roasters Fan Page</label><div class="obsession-quiz-message-correct"><strong>Correct.</strong> If only.</div><div class="obsession-quiz-message-wrong"><strong>Incorrect.</strong> </div><div class="obsession-quiz-fallback">If your inbox doesn’t support this quiz, find the solution at bottom of email.</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">Timeline</div><p class="first"><b>1993: </b><span style="font-weight:400;">GeoCities
+ formally launches. Co-founders David Bohnett and John Rezner’s idea was
+ originally called Beverly Hills Internet, inspired by the </span><a href="http://www.bbc.com/news/technology-20439301" target="_blank"><span style="font-weight:400;">Trojan Room coffee pot</span></a><span style="font-weight:400;">.
+ “I had the idea that we would create a series of communities around 
+themed webcams. I thought if we give away free web pages to people to 
+create content the webcams would initially draw the traffic, then people
+ would create web pages around these themes,” Bohnett told Quartz.</span></p>
+<p><b>1997:</b><span style="font-weight:400;"> GeoCities surpasses 1 million users, equivalent to at least 7% of internet users at the time.</span></p>
+<p><b>1998: </b><span style="font-weight:400;">GeoCities goes public, listing on Nasdaq at $17 a share before </span><a href="https://www.cnet.com/news/geocities-doubles-on-first-day/" target="_blank"><span style="font-weight:400;">nearly doubling that price</span></a><span style="font-weight:400;"> in less than 24 hours. The IPO valued the company at $521 million, or about $750 million in present-day money.</span></p>
+<p><b>1999: </b><span style="font-weight:400;">A still unprofitable 
+GeoCities is acquired for $4.7 billion by Yahoo, which has a knack for 
+poorly-timed purchases (sorry, Tumblr, you’re not special). The </span><a href="https://blogs.wsj.com/deals/2009/10/26/deals-from-hell-yahoo-buries-geocities/" target="_blank"><span style="font-weight:400;">Wall Street Journal</span></a><span style="font-weight:400;">
+ described it as one of Yahoo’s signature “deals from hell.” “Having a 
+page on there became a synonym for dilettantism and bad taste,” </span><a href="http://blog.geocities.institute/about" target="_blank"><span style="font-weight:400;">Olia Lialina and Dragan Espenschied</span></a><span style="font-weight:400;"> summarize on </span><a href="http://blog.geocities.institute/" target="_blank"><span style="font-weight:400;">One Terabyte of Kilobyte Age</span></a><span style="font-weight:400;">. “The time of personal home pages was counted, being replaced with profiles on social networks.” </span></p>
+<p class="last"><b>2009: </b><span style="font-weight:400;">GeoCities is
+ shuttered, as Yahoo pulls the plug on the core North American business 
+and redirects curious users to its Small Business service. GeoCities 
+lives on in Japan, however. As of last year, at least 17 neighborhoods 
+remain, hosting everything from </span><a href="http://www.geocities.jp/higuchuu4/index_e.htm" target="_blank"><span style="font-weight:400;">AI singers</span></a><span style="font-weight:400;"> to </span><a href="http://www.geocities.co.jp/HeartLand-Gaien/7211/top.html" target="_blank"><span style="font-weight:400;">Japanese folklore</span></a><span style="font-weight:400;">. </span></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">Department of jargon </div><h2 class="obsession-card-title">“Geo Cities” or “Gee-OS-ities?”<hr></h2><p class="first last"><span style="font-weight:400;">Believe it or not, a </span><a href="http://answers.google.com/answers/threadview/id/404336.html" target="_blank"><span style="font-weight:400;">debate still rages about the official pronunciation</span></a><span style="font-weight:400;">.
+ EHow’s video on creating your own website uses the latter. Co-founder 
+David Bohnett goes with the former, mostly because the idea for 
+GeoCities sprang from a region-focused approach to fostering online 
+communities. </span></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">Fun fact </div><p class="first last">The classic <a href="http://blog.geocities.institute/archives/4841" target="_blank">“under construction” digging man gif</a> <img class="size-medium wp-image-1184337" src="a_data/giphy-82.gif" alt="" width="40" height="40"> —among many other animated icons—was created by an early adopter named Steve Kangas, who<a href="http://blog.geocities.institute/archives/4841" target="_blank"> quit his job in 1995 to spend 10 hours a day online, surfing and creating web projects</a>.</p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">deep roots</div><h2 class="obsession-card-title">Credit where credit is due<hr></h2><p class="first"><span style="font-weight:400;">At
+ a time when most online interactions were built around rapid-fire 
+surface-level relationships that unfolded in chat rooms, GeoCities stood
+ out as a new model for how to experience digital spaces. “</span><span style="font-weight:400;">In
+ GeoCities, I am given my own homepage, where the friends I met on 
+GeoCities come over… This experience is similar to friends coming over 
+to your apartment, hanging out and having a cup of java,” writes Annie 
+Chen in a University of Michigan </span><a href="http://www.umich.edu/~comm464/virtcomm/anniec/" target="_blank"><span style="font-weight:400;">paper about the platform</span></a><span style="font-weight:400;">. </span></p>
+<p><span style="font-weight:400;">At Slate, </span><a href="http://www.slate.com/articles/technology/technology/2009/10/how_geocities_invented_the_internet.html" target="_blank"><span style="font-weight:400;">Farhad Manjoo writes that GeoCities deserves more credit than it gets</span></a><span style="font-weight:400;">
+ for this reimagination of what the web could provide to users. “Today, 
+few of us think of the Web as a simple source for information; it’s also
+ a place for dissemination, the place where we share life’s most 
+intimate details. In other words, it’s for ‘habitation’—and GeoCities 
+helped start that trend.”</span></p>
+<p class="last"><span style="font-weight:400;">It also gave people 
+without any expertise a place to both play and learn. Adam Ostrow, a 
+digital media exec, built his first GeoCities page in celebration of 
+Atlanta Braves legend Chipper Jones. “Building websites, creating 
+digital content and understanding how to engage online communities… 
+Having these experiences as a kid, on GeoCities, made those skills 
+second nature to me,” Ostrow tells Quartz. </span></p>
+</div></div><div class="obsession-card auto"><figure class="obsession-hero"><div class="obsession-hero-image" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/911-geocities.jpg?quality=80&amp;strip=all);"></div></figure><div class="obsession-card-content"><h2 class="obsession-card-title">In the cul-de-sac<hr></h2><p class="first"><a href="http://blog.geocities.institute/" target="_blank"><span style="font-weight:400;">One Terabyte of Kilobyte Age</span></a><span style="font-weight:400;">,
+ a database of preserved screenshots from GeoCities sites created by 
+artists Olia Lialina and Dragan Espenschied, contains a massive data 
+dump of GeoCities home pages lovingly preserved by the </span><a href="https://www.archiveteam.org/" target="_blank"><span style="font-weight:400;">Archive Team</span></a><span style="font-weight:400;">. </span></p>
+<p><span style="font-weight:400;">Some of its compilations, like this </span><a href="http://blog.geocities.institute/archives/5983" target="_blank"><span style="font-weight:400;">collection of screenshots that catch the first days and weeks after 9/11</span></a><span style="font-weight:400;">,
+ are profound portraits of the moment. Others archive the granular 
+customization options GeoCities offered. Clicking through to a GeoCities
+ page could transform your cursor from an arrow or a gloved hand to a 
+magic wand; a RealPlayer plug-in piped in MIDI versions of the site 
+owner’s favorite tunes. Pages could be built like digital houses: Click 
+on a door, and you’d be led into a hallway with hyperlinked stairs and 
+rooms. </span></p>
+<p class="last">It was all a very stark contrast to today’s sleek plug-and-play web hosting platforms and the tepid blue of Facebook’s feed. <span style="font-weight:400;">“Users
+ have found new ways to work with the web of today, especially social 
+media, but there is almost no sense of ownership anymore,” Lialina told 
+Quartz. </span></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">take me down this 🐰 hole!</div><p class="first last"><span style="font-weight:400;">Take a stroll through </span><a href="http://deletedcity.net/" target="_blank"><span style="font-weight:400;">Deleted City</span></a><span style="font-weight:400;">,
+ an interactive map of GeoCities’ 40 neighborhoods, created by Richard 
+Vijgen. Zoom into the cyberpunk green and black topography and you’ll 
+see sub-neighborhoods and the sites themselves, still relatively intact 
+thanks to the Internet Archive.</span></p>
+</div></div><div class="obsession-card video"><figure class="obsession-hero"><a href="https://www.youtube.com/watch?v=MNYiWfsENmc" target="_blank"><div class="obsession-hero-image" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/geocities-video2.jpg?quality=80&amp;strip=all);"><div class="play-button"></div></div></a></figure><div class="obsession-card-content"><div class="obsession-card-kicker">Watch this! </div><p class="first last"><span style="font-weight:400;">This “How to Build a Web Site Using GeoCities” video—uploaded the year GeoCities shut down in the US—is inadvertently hilarious.</span></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">The way we 💻 now</div><p class="first last"><span style="font-weight:400;">Since
+ GeoCities swept the ‘net, web hosting services have only grown more 
+sophisticated. GoDaddy’s risqué ads have snared it countless users and 
+Squarespace is probably the reason your favorite podcast is still 
+around. But those longing for that sweet Web 1.0 aesthetic need only 
+dust off their Earthlink trial disks before heading to </span><a href="https://neocities.org/" target="_blank"><span style="font-weight:400;">NeoCities</span></a><span style="font-weight:400;"> or </span><a href="http://geocities.ws/" target="_blank"><span style="font-weight:400;">GeoCities.ws</span></a><span style="font-weight:400;">—two prominent platforms that explicitly evoke the GeoCities sites of yore.</span></p>
+</div></div><div class="obsession-card poll"><figure class="obsession-hero"><div class="obsession-hero-image" style="background-image: url(https://qzprod.files.wordpress.com/2018/01/geocities-poll.jpg?quality=80&amp;strip=all);"><table><tbody><tr><td><div class="obsession-card-kicker">Poll </div><h2 class="obsession-hero-title">How do you feel about GeoCities now?</h2></td></tr></tbody></table></div></figure><input id="poll-12-vote-control" checked="checked" type="checkbox"><div class="vote-btn"><a clicktracking="on" class="obsession-card-cta" href="https://polldaddy.com/poll/9921635/" target="_blank">Click here to vote</a></div><div class="vote-options"><input name="poll-9921635" id="poll-9921635-radio-45473292" type="radio"><input name="poll-9921635" id="poll-9921635-radio-45473293" type="radio"><input name="poll-9921635" id="poll-9921635-radio-45473294" type="radio"><label for="poll-9921635-radio-45473292" id="poll-9921635-answer-45473292" class="obsession-poll-answer first">Dialing up my time machine</label><label for="poll-9921635-radio-45473293" id="poll-9921635-answer-45473293" class="obsession-poll-answer">At least Facebook gave us the "poke"</label><label for="poll-9921635-radio-45473294" id="poll-9921635-answer-45473294" class="obsession-poll-answer last">What about Angelfire? Now that was my jam.</label></div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">The fine print </div><p class="first"><span style="font-weight:400;">In yesterday’s poll about <a href="https://qz.com/email/quartz-obsession/1182121/" target="_blank">fat-finger syndrome</a>, 42% of you said you’re “brimming with newfound admiration” for your pinky finger.</span></p>
+<p><span style="font-weight:400;">Today’s email was written by <a href="https://twitter.com/ayetalian" target="_blank">April Siese</a>.</span></p>
+<figure class="inline-image alignnone"><img src="a_data/giphy-85.gif" alt="giphy (85)"></figure>
+<p class="last"><em><span style="font-weight:400;">Images: <a href="http://blog.geocities.institute/wp-content/uploads/promo.mp4" target="_blank">One Terabyte of Kilobyte Age (Arvin’s homepage),</a></span> <a href="http://web.archive.org/web/19991013175246/http://www2.geocities.com:80/Area51/" target="_blank">Wayback Machine (Area51)</a>, <a href="http://web.archive.org/web/19970301105847/geocities.com/" target="_blank">Wayback Machine (welcome page),</a> </em><em><span class="s1"><a href="http://blog.geocities.institute/archives/5983" target="_blank">One Terabyte of Kilobyte Age (9/11 pages)</a>, <a href="http://www.textfiles.com/underconstruction/" target="_blank">Text Files (construction man),</a> </span><a href="http://blog.geocities.institute/wp-content/uploads/1-1.png" target="_blank">One Terabyte of Kilobyte Age (web colors)</a> </em></p>
+</div></div><div class="obsession-card auto"><div class="obsession-card-content"><div class="obsession-card-kicker">Sound off </div><p class="first">✏️ <a href="mailto:obsession%2Bfeedback@qz.com?cc=&amp;subject=Thoughts%20about%20the%20lost%20age%20of%20the%20internet.&amp;body=" target="_blank">What did you think of today’s email?</a></p>
+<p>💡 <a href="mailto:obsession%2Bideas@qz.com?cc=&amp;subject=Obsess%20over%20this%20next.&amp;body=" target="_blank">What should we obsess over next?</a></p>
+<p>👀 <a href="mailto:obsession%2Bprompt@qz.com?cc=&amp;subject=Not%20just%20the%20yellow%20ones.%20&amp;body=" target="_blank">Send us a snapshot of the next Post-it note you see.</a></p>
+<p class="last">📬 <a href="mailto:replace_with_friends_email@qz.com?cc=obsession%2Bforward@qz.com&amp;subject=Quartz%20Obsession%20about%20GeoCities&amp;body=Thought%20you%27d%20enjoy.%20%0A%0AEmail%20at%20http%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184093%2F%0ASign%20up%20for%20the%20newsletter%20at%20http%3A%2F%2Fqz.com%2Fquartz-obsession" target="_blank">Forward this email to a friend</a></p>
+</div></div><!--[if mso | IE]></div><![endif]--><div id="obsession-footer"><div class="obsession-footer-content"><p>The correct answer to the quiz is <em>Kenny Rogers Roasters Fan Page</em>.</p><p>Enjoying the Quartz Obsession? <a href="https://qz.com/email/quartz-obsession/1184546/" target="_blank">Send this link</a> to a friend!</p><p>Not enjoying it? No worries. <a href="https://qz.com/email/quartz-obsession/1184546/[unsubscribe]" target="_blank">Click here</a> to unsubscribe.</p><p class="last">Quartz | 675 Avenue of the Americas, 4th Fl | New York, NY 10011 | United States</p></div></div><div id="obsession-share-footer"><div class="obsession-footer-content"><table class="obsession-card-share"><tbody><tr><td>Share this email</td><td class="share-buttons"><a class="icon" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184546%2F&amp;text=GeoCities&amp;via=qz" target="_blank"><img src="a_data/twitter.png"></a><a class="icon" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184546%2F" target="_blank"><img src="a_data/facebook.png"></a><a class="icon" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184546%2F&amp;description=GeoCities" target="_blank"><img src="a_data/pinterest.png"></a><a class="icon" href="whatsapp://send?text=GeoCities" target="_blank"><img src="a_data/whatsapp.png"></a><a class="icon" href="mailto:?subject=GeoCities&amp;body=https%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184546%2F" target="_blank"><img src="a_data/email.png"></a></td></tr></tbody></table></div></div></div><!--[if mso | IE]></td></tr></table><![endif]--></body></html>

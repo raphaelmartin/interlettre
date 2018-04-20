@@ -1,0 +1,1427 @@
+Return-path: <bounces+5998231-c5cf-pinkcurls=me.com@email.qz.com>
+Received: from ms11p00im-qufv17093301.mac.com ([17.58.36.74])
+ by ms38022.mac.com
+ (Oracle Communications Messaging Server 8.0.1.3.20170906 64bit (built Sep  6
+ 2017)) with ESMTP id <0P2V00OKH2HXJR70@ms38022.mac.com> for pinkcurls@me.com;
+ Sat, 20 Jan 2018 15:46:45 +0000 (GMT)
+Original-recipient: rfc822;pinkcurls@me.com
+Received: from o1.outbound-email.qz.com
+ (o1.outbound-email.qz.com [168.245.114.7]) by ms11p00im-qufv17093301.me.com
+ (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7
+ 2017)) with ESMTPS id <0P2V00JOY2HOI360@ms11p00im-qufv17093301.me.com> for
+ pinkcurls@me.com (ORCPT pinkcurls@me.com); Sat,
+ 20 Jan 2018 15:46:45 +0000 (GMT)
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=125 suspectscore=88 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1707230000 definitions=main-1801200231
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2018-01-20_06:,, signatures=0
+Authentication-results: ms11p00im-qufv10113101.me.com; dmarc=none
+ header.from=qz.com
+Authentication-results: ms11p00im-qufv10114001.me.com; spf=pass
+ (ms11p00im-qufv10114001.me.com: domain of
+ bounces+5998231-c5cf-pinkcurls=me.com@email.qz.com designates 168.245.114.7 as
+ permitted sender)
+ smtp.mailfrom="bounces+5998231-c5cf-pinkcurls=me.com@email.qz.com"
+Received-SPF: pass (ms11p00im-qufv10114001.me.com: domain of
+ bounces+5998231-c5cf-pinkcurls=me.com@email.qz.com designates 168.245.114.7 as
+ permitted sender) receiver=ms11p00im-qufv10114001.me.com;
+ client-ip=168.245.114.7; helo=o1.outbound-email.qz.com;
+ envelope-from="bounces+5998231-c5cf-pinkcurls=me.com@email.qz.com"
+Authentication-results: ms11p00im-qufv10073001.me.com;	dkim=pass (1024-bit key)
+ header.d=qz.com header.i=@qz.com header.b=zc6ED6U9;	dkim-adsp=pass
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=qz.com;
+	h=content-transfer-encoding:content-type:from:mime-version:reply-to:subject:to:list-unsubscribe;
+	s=s1; bh=EYxWASdjAEYRW4aonzOxAAcvj+g=; b=zc6ED6U9rSf2yFiVox0m+jP
+	aKHImA4EDtsU3bgXqh4i72ijHHqEkXcxG8esdpfILd4sZLAXN1sSP51m8Ah7F/MD
+	nzvhRnj0VZY+hxIxGx+MQhhTIk5ZQpKbeiR7GdDatta/m3UTI6XrkmSgISmlPMAW
+	uCDdMK0/j5SHHnRYDUdI=
+Content-transfer-encoding: quoted-printable
+Content-type: text/html; charset=UTF-8
+Date: Sat, 20 Jan 2018 15:46:42 +0000 (UTC)
+From: Quartz Obsession <hi@qz.com>
+MIME-version: 1.0
+Reply-to: hi@qz.com
+Subject: GeoCities: Why Web 1.0 nostalgia will never die
+To: pinkcurls@me.com
+Message-id: <MnmW9RNgTiuR0JeGUYEQ9A@ismtpd0010p1iad2.sendgrid.net>
+List-Unsubscribe:
+ <mailto:unsubscribe@email.qz.com?subject=http://email-tracking.qz.com/asm/unsubscribe/*q*user_id=5998231*a*data=Nam_7Ix7G0knEzepz9fGsu0CpYIwFGcC9L0KE6AEK8BMFKAa9XlbU4wNj6lSGQqQdCxWZ4ZK0ab7khMWBDDX_lMN-1O_GTBwJEqOLxpQaOuNh9AZ71O6kEDqkINn-cKyyYRQ9n4KXdPtyswASCUf0ZKOZIiUU1cS7QLibVHMckH5pwzFaRRqY3x2u-TX8eurTAPATUQpuB0R2qakzj6ltgBcpVGMSiimJy_rHhAoVEnajbPGWZUwdw6Fc193mWMXhhsgkQjvv7dJHLbtaYrHqPKrtQgESh2lHxNJK0VaG6Z-O4ntXXkKjEOlqCo_VqEGMXqp84bHWqwGe0UOmyYOoWArOVl3fUr2BrLFuVkN3c1WWKZHQjoKCi2u5YOELa6zfZIkwRESvzO9tgXY4y5qKyBVoFs-PMIxL-nZ6PD-5P6ZC9yCrwXrxvFKJJcGeieAMzK41wUdh26KugCgoVETe7lUaoiTYyPbL_vlwVPkLyG53NZYaMDaqgUTms_h-L_v6KQkD0VfoIifa7Pgel5VLEOb1J3UkWwAvz3Z9S9Az_uYbgAV3Qgo_Bb2RC4OKoQ0TFtzwHkx5LbWcl-Sd89FSVwOZdgHFvKKryGi3jRO-iFLoB-lM2m7IWYieLCjQfTaX_Gwr5hYJckrsZIxJTR4mw==>
+x-icloud-spam-score: 3311331
+ f=qz.com;e=email.qz.com;is=yes;ir=no;spf=pass;dkim=pass;dmarc=noPolicy/noPolicy/none;gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: None
+X-CLX-Score: 125
+X-CLX-UShades: None
+X-CLX-Shades: None
+X-MANTSH: 1TEIXR1kbG1oaGkNHB1tfTFwbHRgZGxIaGxEKTEMXGxoEGxsYBBsbGgQeGRAbHho
+ fGhEKTFkXGxgfEQpZTRdkRURPEQpZSRcacRoQGncGGxofcR8aHBwQHh4ddwYYGgYaEQpZXhdra
+ 3kRCkNOF0dTGWRff0xkfWBdQGBzRHsTcGtSfxJBaFxOfExmTwUBEQpYXBcZBBoEGRgHTRlOE08
+ TGRgFGxoEEwQbEgQbGRwQGx4aHxoRCl5ZF3hHe0AFEQpNXBcZGh4RCkxaF29tTU1dEQpDWhcbH
+ BIEGB4fBBsbHgQdEQpCXhcbEQpCRhd6RWdlbltjHk9BWhEKQkcXZR9MWl0dGhJ8GmsRCkJcFxs
+ RCl5OFxsRCkJLF254XVpGeAVmQFJiEQpCRRdlbUV4bkgBG2B/HxEKQk4XbnhdWkZ4BWZAUmIRC
+ kJMF25OSRtLXmhSGH4TEQpCbBdiWxN4ZRlrYBp6XxEKQkAXYx1sXmgacntffEcRCkJYF296BWZ
+ IUE1IYXBeEQpCeBdsHB1FXWEfHH8eAREKcGgXY1JcWEJSH3JvGEUQGRoRCnBoF2lIRR1bE0weX
+ ltCEBkaEQpwaBdkYklwYXtGehpeQxAZGhEKcGgXeltPeBoYYV1re0sQGRoRCnBoF2VNc1JpQ2l
+ /HHx+EBkaEQpwfxdlHG1BGU5/GFhYHRAdGhEKcF8Xa1MfW0h6UH0TQ3wQEwQdEQpwfRdhR0xdZ
+ 09aTXN/axAZGhEKcH8XbUJLUm9EG0FiZh0QHRoRCnBfF29GHh1MWUJZTGlPEBkaEQpwfRdiGF8
+ BYENTWhsFWxAaEQpwfRdmX3oBQE97XE97axAaEQpwfRdtE1lYZ1IcHVBNExAaEQpwfRduU0BnY
+ kBtbEwFHRAaEQpwfRdpfk5IRk9oHB4FbRAaEQpwfRdoYmYeekZdSU5BGxAaEQpwfRdueGsZZWl
+ TTWUTchAaEQpwbBdiTlBienJfSGVHHRAZGhEKbX4XGhEKWE0X
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-SG-EID:
+ 3YtdP+TmagQj4gsJnHTExqkmMbao3Og8AZGgIEt/dY5OK0o1EaWli7UaJnZ9v5mLweTYVsU52tLjvk
+ Fm5CoWcZYHQ6vfcfI8LxKupwHz3zaIfpAJCef1XpUH1+1D4NanLpBT++vIaIzpZShQi4Y+s99Uml5b
+ mMMeY63rIA2zIKkc/1QDRCuKMkbMGNKGJ04P0rnUqns03oq9dwIOo5glcQ==
+X-SG-ID:
+ Z2FxZazunBjVeNuNdzHDqrF8mxuCpi0krmont6YQrP3tlqqZfm0k2Q+b1af1Utsnw3m3Zi/IuaUj4D
+ +G0sQL3uNDaLySX+yO0C4CrXu+AW1SR8pIWPuGB34y4FgNrbzkI81yLmmdPC0zF9/U0xqeREIqOy5p
+ /Wau7OqR1W1+5VLGyOMQt0Xyh8LG1nLrbaG0FVOizMfa+FVQdJs+tGDsW9mMo9da5tGKvvOMb4Z8Zf
+ m8E1bitvK3zB/83N2gZFWj1qZdZIwhyNVa/a/9x4QC+NtcPhGKhun60FeIY8eiis8=
+
+<html><head><title></title><style type=3D"text/css">body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, ".SFNSDisplay-Regular", Roboto, Helvetica, Ta=
+homa, sans-serif; }
+
+a {
+  color: #168DD9;
+  text-decoration: none; }
+
+figure {
+  margin: 0; }
+  figure img {
+    width: 100%; }
+
+figcaption {
+  text-align: right; }
+
+table {
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  padding: 0; }
+
+#obsession-container {
+  max-width: 768px;
+  margin: auto;
+  background-color: #f1f1f1; }
+
+#obsession-header {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  width: 100%;
+  height: 330px; }
+
+#obsession-header-content {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff; }
+  #obsession-header-content img {
+    max-width: 200px; }
+
+#obsession-header-date {
+  font-size: 14px; }
+
+#obsession-sponsor {
+  color: #fff;
+  font-size: 10px;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  height: 30px;
+  line-height: 30px; }
+  #obsession-sponsor img {
+    vertical-align: middle;
+    width: 70px;
+    margin-left: 5px; }
+
+.obsession-hero {
+  margin: 0;
+  position: relative; }
+  .obsession-hero figcaption {
+    font-size: 8px;
+    text-align: right;
+    color: #bebebe;
+    padding: 0 6px 5px 0; }
+  .obsession-hero table {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+    .obsession-hero table td {
+      padding: 0 15%; }
+  .poll .obsession-hero td,
+  .quiz .obsession-hero td {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+.obsession-hero-title {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px; }
+
+.obsession-hero-image {
+  width: 100%;
+  padding-bottom: 56.56%;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+  .poll .obsession-hero-image,
+  .quiz .obsession-hero-image,
+  .video .obsession-hero-image {
+    padding: 0;
+    height: 200px; }
+    @media screen and (min-width: 376px) {
+      .poll .obsession-hero-image,
+      .quiz .obsession-hero-image,
+      .video .obsession-hero-image {
+        height: 282px; } }
+  .obsession-hero-image table {
+    width: 100%;
+    height: 100%; }
+    .obsession-hero-image table td {
+      text-align: center;
+      vertical-align: middle; }
+  .obsession-hero-image .play-button {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+.obsession-card {
+  margin: 20px 15px;
+  font-size: 15px;
+  max-width: 500px; }
+  .obsession-card:first-of-type {
+    position: relative;
+    margin-top: -25px; }
+  @media screen and (min-width: 531px) {
+    .obsession-card {
+      margin: 20px auto; } }
+
+.obsession-card-kicker {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bebebe;
+  margin-bottom: 5px; }
+
+.obsession-card-sponsor-label {
+  color: #F1A33F; }
+
+.obsession-card-title {
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 70%;
+  margin-top: 0; }
+  @media screen and (min-width: 600px) {
+    .obsession-card-title {
+      max-width: 50%; } }
+  .obsession-card-title hr {
+    width: 140px;
+    border-bottom: 4px solid #000;
+    margin: 10px 0 0 0; }
+
+.obsession-card-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px; }
+  .obsession-hero + .obsession-card-content {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .obsession-card-content img {
+    max-width: 100%; }
+  .obsession-card-content figure {
+    margin: 0; }
+  .obsession-card-content figcaption {
+    font-size: 8px;
+    text-align: right;
+    color: #bebebe; }
+  .obsession-card-content p {
+    margin: 1em 0;
+    line-height: 1.5; }
+    .obsession-card-content p.first {
+      margin-top: 0; }
+    .obsession-card-content p.last {
+      margin-bottom: 0; }
+  .obsession-card-content ul,
+  .obsession-card-content ol {
+    padding: 0 0 0 18px; }
+  .obsession-card-content li {
+    margin: 0 0 5px 0; }
+  .obsession-card-content blockquote {
+    margin: 1em 0;
+    font-family: Georgia, serif;
+    font-style: italic; }
+  .obsession-card-content .pull-quote {
+    margin: 1em 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #5D5D5D; }
+    .obsession-card-content .pull-quote .quote-line {
+      display: none; }
+
+.obsession-card-cta {
+  display: block;
+  background-color: #168DD9;
+  color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  padding: 18px 0;
+  text-decoration: none; }
+
+.obsession-card-share {
+  font-size: 12px;
+  color: #A7A7A7;
+  width: 100%;
+  padding: 6px 6px 0 6px; }
+  .obsession-card-share .share-buttons {
+    text-align: right; }
+    .obsession-card-share .share-buttons a {
+      margin-left: 10px; }
+
+.obsession-poll-answer,
+.obsession-quiz-answer {
+  display: block;
+  background-color: #fff;
+  margin: 0 15px 3px 15px;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer; }
+  .obsession-poll-answer:first-of-type,
+  .obsession-quiz-answer:first-of-type {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: -25px; }
+  .obsession-poll-answer:last-of-type,
+  .obsession-quiz-answer:last-of-type {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
+
+.poll input {
+  display: none; }
+
+.quiz input {
+  display: none; }
+
+.quiz .obsession-quiz-message-correct,
+.quiz .obsession-quiz-message-wrong {
+  display: none; }
+
+.quiz .obsession-quiz-radio-correct:checked ~ .obsession-quiz-message-corre=
+ct {
+  display: block; }
+
+.quiz .obsession-quiz-radio-wrong:checked ~ .obsession-quiz-message-wrong {
+  display: block; }
+
+.quiz .obsession-quiz-radio-wrong:checked ~ .obsession-quiz-answer.correct {
+  background: green; }
+
+.quiz .obsession-quiz-answer.correct:hover {
+  background: green; }
+  .quiz .obsession-quiz-answer.correct:hover ~ .obsession-quiz-message-corr=
+ect {
+    display: block; }
+
+.quiz .obsession-quiz-answer.wrong:hover {
+  background: red; }
+  .quiz .obsession-quiz-answer.wrong:hover ~ .obsession-quiz-message-wrong {
+    display: block; }
+
+.obsession-quiz-message-correct,
+.obsession-quiz-message-wrong,
+.obsession-poll-message {
+  display: none;
+  font-size: 15px;
+  margin: 15px; }
+
+.obsession-quiz-fallback {
+  text-align: center;
+  color: #bebebe;
+  padding: 5px 0 0 0;
+  font-size: 10px; }
+  @media screen and (max-width: 600px) {
+    .obsession-quiz-fallback {
+      font-size: 8px; } }
+
+.obsession-quiz-footer-fallback {
+  text-align: left;
+  color: #bebebe;
+  padding: 10px 0;
+  font-size: 10px;
+  max-width: 460px;
+  margin: auto; }
+  @media screen and (max-width: 600px) {
+    .obsession-quiz-footer-fallback {
+      font-size: 8px; } }
+
+.obsession-gallery {
+  background-color: #fff;
+  text-align: center;
+  display: table;
+  width: 100%; }
+  .obsession-gallery input {
+    display: none; }
+  .obsession-gallery label {
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    max-width: 50px; }
+    .obsession-gallery label img {
+      width: 100%; }
+
+.obsession-gallery-images {
+  display: table-caption;
+  caption-side: top;
+  table-layout: fixed; }
+  .obsession-gallery-images img {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+
+#obsession-footer {
+  background-color: #2B2B2B;
+  margin-top: 40px;
+  padding: 0 15px; }
+  @media screen and (min-width: 531px) {
+    #obsession-footer {
+      padding: 0; } }
+
+#obsession-share-footer {
+  background-color: #000;
+  padding: 0 15px; }
+  #obsession-share-footer table {
+    width: 100%;
+    color: #fff;
+    font-size: 12px; }
+  #obsession-share-footer .share-buttons {
+    text-align: right; }
+    #obsession-share-footer .share-buttons a {
+      margin-left: 10px; }
+  #obsession-share-footer .obsession-card-share {
+    padding: 0; }
+  @media screen and (min-width: 531px) {
+    #obsession-share-footer {
+      padding: 0; } }
+
+.obsession-footer-content {
+  max-width: 460px;
+  margin: auto;
+  font-size: 12px;
+  color: #fff;
+  padding: 15px 0; }
+  .obsession-footer-content p {
+    margin: 0 0 15px 0; }
+  .obsession-footer-content .last {
+    margin: 0; }
+
+.outlook-card {
+  margin-bottom: 20px;
+  background-color: #fff; }
+  .outlook-card .obsession-card-title {
+    max-width: none; }
+  .outlook-card hr {
+    display: none !important; }
+  .outlook-card td {
+    padding: 30px; }
+  .outlook-card h3 {
+    font-size: 15px; }
+  .outlook-card .warning {
+    color: #ccc;
+    font-size: 10px; }
+
+.outlook-cta {
+  background-color: #168DD9;
+  text-align: center;
+  width: 100%; }
+  .outlook-cta td {
+    padding: 30px; }
+  .outlook-cta a {
+    color: #fff;
+    text-decoration: none; }
+
+.hidden {
+  display: none;
+  mso-hide: all;
+  height: 0;
+  line-height: 0;
+  font-size: 0px;
+  overflow: hidden; }
+  .hidden table {
+    display: none !important;
+    mso-hide: all !important; }
+.play-button { background-image: url(https://s2.wp.com/wp-content/themes/vi=
+p/qz-api/lib/plugins/qz-obsession-email/images/play.png); }#quiz-3-answer-r=
+adio-correct:checked ~ .obsession-quiz-answer.correct { background: green; }
+#quiz-3-answer-radio-1:checked ~ #qz-3-answer-label-1 { background:red; }
+#quiz-3-answer-radio-2:checked ~ #qz-3-answer-label-2 { background:red; }
+#quiz-3-answer-radio-3:checked ~ #qz-3-answer-label-3 { background:red; }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473292 { back=
+ground-image: url(https://quartz-obsession.quartz.work/vote?poll_id=3D99216=
+35&answer_id=3D45473292) }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473293 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473293) }
+#poll-9921635-radio-45473292:checked ~ #poll-9921635-answer-45473294 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473294) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473293 { back=
+ground-image: url(https://quartz-obsession.quartz.work/vote?poll_id=3D99216=
+35&answer_id=3D45473293) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473292 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473292) }
+#poll-9921635-radio-45473293:checked ~ #poll-9921635-answer-45473294 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473294) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473294 { back=
+ground-image: url(https://quartz-obsession.quartz.work/vote?poll_id=3D99216=
+35&answer_id=3D45473294) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473292 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473292) }
+#poll-9921635-radio-45473294:checked ~ #poll-9921635-answer-45473293 { back=
+ground-image: url(https://quartz-obsession.quartz.work/result?poll_id=3D992=
+1635&answer_id=3D45473293) }
+.vote-options { display: none; }
+#poll-12-vote-control:checked ~ .vote-btn { display: none; }
+#poll-12-vote-control:checked ~ .vote-options { display: block; }
+#obsession-header td { background: url(https://s0.wp.com/wp-content/themes/=
+vip/qz-api/lib/plugins/qz-obsession-email/images/1x1-black.png); }
+.obsession-hero-image td { background: url(https://s2.wp.com/wp-content/the=
+mes/vip/qz-api/lib/plugins/qz-obsession-email/images/1x1-purple.png); }
+</style></head><body><!--[if mso | IE]><table width=3D"600" bgcolor=3D"#f1f=
+1f1" align=3D"center"><tr><td><![endif]--><div id=3D"obsession-container"><=
+table id=3D"obsession-header" style=3D"background-image: url(https://qzprod=
+.files.wordpress.com/2018/01/ezgif-com-resize-3.gif?w=3D640)"><tr><td id=3D=
+"obsession-header-content"><img src=3D"https://s1.wp.com/wp-content/themes/=
+vip/qz-api/lib/plugins/qz-obsession-email/images/logo-v2.png" alt=3D"Quartz=
+ Obsession"/><h1 id=3D"obsession-header-title">GeoCities</h1><span id=3D"ob=
+session-header-date">January 20, 2018</span></td></tr></table><!--[if mso |=
+ IE]><table class=3D"outlook-card"><tr><td><div class=3D"obsession-card-con=
+tent"><h2 class=3D"obsession-card-title">In the beginning<hr /></h2><p clas=
+s=3D"first"><span style=3D"font-weight:400;">Facebook: Where to begin with =
+what it hath wrought? </span></p>
+<p><span style=3D"font-weight:400;">Last week, the social media giant (</sp=
+an><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMf=
+A2zQSlOYHmRp9ZmqPdJthhJUDZUWY2QnpCDJ1goXPFCeJfDgVrAnIhmAXzNwjBIz1xfV-2F3J6k=
+X0mF0qswov8FkLr2Hot7Pz52YccXeDV-2BUogVyocnBd5BxBTFgsyiy6P57mlj9k-2B66JHlJHI=
+xFmQdYvX6M-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B=
+-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOI=
+g0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1D=
+RRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEZFLUMfxUtoYb=
+sFeNBlr1086vEWXMsealuu4FfK89PyeRsE8WmG-2BB-2Fvk9dr5gpkOgSer-2F0uFpqvhozLZCR=
+z7U-2F2wk3RHRI8usreQdLHAwaWpRFJqqWlCHKEHSMbk6flWucwQg0iT7BwoM4uWxDT-2BhRXrh=
+ophTkJ1GPp4RsX2Bjsc4gSPRfy2I8hCRwcjdYw6Vyo0pNN9b0Z-2FVLH525vK73Gyf4Aik3lFi-=
+2BCyMorl2GxmAY0MWacLHNMG1DP5zy1ZrRMgN-2FzZq9HAlZjBhWxCjDA-3D-3D"><span styl=
+e=3D"font-weight:400;">which has almost as many users as Christianity has f=
+ollowers</span></a><span style=3D"font-weight:400;">) announced that it=E2=
+=80=99s going old school, deprioritizing publisher- and brand-promoted post=
+s in favor of more =E2=80=9Cquality interactions=E2=80=9D between human bei=
+ngs. </span></p>
+<p><span style=3D"font-weight:400;">For many critics, the correction is bot=
+h overdue and underwhelming. =E2=80=9CThe short-term, dopamine-driven feedb=
+ack loops we=E2=80=99ve created are destroying how society works,=E2=80=9D =
+Chamath Palihapitiya, formerly Facebook=E2=80=99s VP of user growth, said l=
+ast fall. He=E2=80=99s </span><a href=3D"http://email-tracking.qz.com/wf/cl=
+ick?upn=3Dpu9n0ps8hGF44zTMfA2zQavSEWI9sK4-2BBFMyRFyyqo-2F-2BjpC3F7bTb3kqdPR=
+Iq2lCoBIkXTFnhrW2IaR3WhJtVBu2jjcOVXXOiakmtVOvb91CAvivqfDW2yY0MGtpys6gUsMnf9=
+l3ZzX5J1N5T3apUg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8=
+-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXs=
+W3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap=
+-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE9ma=
+GHv7SPRSewBZqzzkwqUhkBqkLFcLU40381TfeQWJYnO3LRejQ6uhfxgIj5OrwOUG-2Fe-2BPYQs=
+iOGgNleTc-2FqSj456lkjiBwE3CwJtFAun7LWFdmB3mzGcDkwsBpyIiwHkOrijJ58yispAu-2Fw=
+-2BJOtqiR2dgqVLGUYfDOzjSier3Pvbbf31frUguJ4456si036GTzGrmssDmXDSt2OVnDxlU9lD=
+oUSAsOnSjhyz-2Be2KggI4pZfL4Ed6FgWoGs3e6Ggt-2F2RPwbQ8ht5jH0X-2F6e8Q-3D-3D"><=
+span style=3D"font-weight:400;">just one of the Silicon Valley insiders</sp=
+an></a><span style=3D"font-weight:400;"> who </span><a href=3D"http://email=
+-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQdbH89MSNK7-2FQtup5h-2F=
+hCZli2QrW6tJuqbVv55Di09FKQu8b6RCQOqjkwFWBQYRXKGTokKbmn8KSgVO8W0bAI-2F-2BYFL=
+X-2Bh3MSCoadXyBoiUQ-2BudB-2B1Gh7kmSszzlmGyL4NXBTPp1qBcHKNo2ZVtY-2BqzY8q1ok7=
+kAgA3neZY-2FLzaeyrrRgyA-2BxVamZen5BpA9J3rOoguyDBP02VpsMcR14b6w-3D_B-2BIbELk=
+y-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfD=
+XtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B=
+11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iM=
+jf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEOXb6EuV1sU4sMhBcTJEu3ziFW-2Bb9-2Flu=
+rkJWCq0k3YqVekn-2F-2FGc3ya4SpOc59ytWmUpQXYGDOZnIOztxi0MBVBjPikEnnKMchZRJJHL=
+uCxeZosP6fswzY2LuS2VsVUfiqJBcOIFtufUXZws8vC8HI7CacGiFDwDfoXv5Hk0xfvrJ9XrLHz=
+Li9uXa-2Fbep-2BQ-2FxI44blffrYS2itb7SLo6xTyc7eCam7rG8bsLnJwMSAkM4SNDnjZVpR6D=
+ktoNzn-2Bsi5E7tYOjZfpm746q7YPAKI0A-3D-3D"><span style=3D"font-weight:400;">=
+have spoken out </span></a><span style=3D"font-weight:400;">about the ways =
+tech companies exploit people=E2=80=99s psychological vulnerabilities.</spa=
+n></p>
+<p><span style=3D"font-weight:400;">Facebook has also been snapping up comp=
+anies like </span><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu=
+9n0ps8hGF44zTMfA2zQUpsa3a5u-2FjhY4Witgn9yo-2BVhZ-2FEyryY7vOqLVraJWMokVA6Ig2=
+XaxXHzplLxvg5au-2FCfu9TU4ffssldPtSc-2FaczbxWi1EdhHLbvcGoqoBxusqLUjw-2F9B2Zm=
+DgEEOlo69g-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z=
+-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrT=
+COIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMA=
+j1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEI8P-2FKuE=
+cCAMclNfAx1v56XyQUleBxPFcJkaR3BY482af6cSDknvGO-2BncR-2BYy9o-2FwmDWR6eDruiPX=
+7F-2BZ7HKnrgwXiSW7De7nvImX-2FOrHDMFOj7m4ao7zSOSFSvHas-2Bu1mSZ2ChPOu5ENveNjB=
+3mRTCQq6-2FdX4gKSk5PoYk3Zne8wuh-2FJgIA-2BirU7wGDDJe6uiJd86da16iEDnn4MkyedJg=
+ZKNVHbpnq48WG-2FFVPpkPKOP4Yhqt7DGyz8t2oxCSIueqt5VFyjm02v26CnHbjWcw-3D-3D"><=
+span style=3D"font-weight:400;">tbh</span></a><span style=3D"font-weight:40=
+0;">, which lets people send each other anonymous positive feedback. The fi=
+ghting spirit of tbh can be traced to a different era: What if GeoCities, a=
+ famously positive web hosting service, had been the platform that took off=
+ instead? The web, and the world, might be a very different place indeed.</=
+span></p>
+<p>=F0=9F=90=A6 <a href=3D"http://email-tracking.qz.com/wf/click?upn=3DTGl3=
+29bkKRGwDIU8UVmc96xdBzOZNRb9aT1wyDD1po3WoXccm5sQdQpI2KSJzzvepgyHt0M3laH6Nke=
+PX-2FIOlh0odYvHafyKEf-2BtS3o8hsRnQ27PQgEJOEtDr2k3-2Bi-2Frle3-2Bvb9TLOk9VaR3=
+R7bqEhTC-2BNTp-2F5nAwpVQuv9QkED0OqzgsrI0ib2YE01CSmBq_B-2BIbELky-2FkwH3aVVxN=
+xsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpo=
+h-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMe=
+QLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22V=
+AJAonbFqDJt7iTeSE6oLUNtRNcEvG3V4xFkLcew7c01xJ2eY9UUeeLhNdsaH8Gz1BfBGDom8oKl=
+j7pHsyqvwdNKos7uj6AbDsyS9ufMrAHqQW-2Fvr5BYAuHoVtvbSPYuEuJHJWz44L5rOUdH2Zag8=
+uQomXQDf0Y-2BvwhotcKhVKQdGKVXiNpUXcGD3YJMFX0J5AMgXs-2BTMK1cKTk1rCbuEeL2TluV=
+C2nn7o7H7klS27MlHiw3C-2FoaOboOlvBeQEReEi9j-2FgzEJlu6RCtdaR-2FnC-2BNEyZ-2B3u=
+VNxUZE3OHn-2FiqmN1eAG5g-3D-3D">Tweet about this! </a>=F0=9F=91=8D <a href=
+=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOAxisuw=
+pWf9nPds0AH6I9lidrAttQYpzuArqNgp-2Fd-2FsEdeUifyMk7oDETEi31iD6Z4ST9H3Ir-2Fd2=
+ij4lydpSUcgzBpimqtys0kS-2Bjv9Ia4Lyt9hu16hd9ldDctS4eN9OfAh-2FxYI9K8oMRhb3Wuu=
+LVBAw1KYEItc64dbSi7DqiXTaxyCo5l0e4xXla3-2BZoXKA-2BW78rSl51P4skl2GAcXWVFk-3D=
+_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy=
+0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufS=
+BXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ=
+4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcESQdNdylZDg6QLM7xO7nfq3HAg=
+nhyHkuribEmIXcsGCFLW1RXVtNrwAfwW3h-2FTGRrKepTjaZR2i0nPb0KeztJpCageSkpcQmdfH=
+Uf25qdCWMsB6kZrvirgkEK3fSss9TZ-2BtsOI9sVJZqu4LmZeyx-2BwhDUC04D2sOLIa8ZYYFrl=
+5zRNBAYMtNI0HT-2FqHTrGcp8XD-2BKaD7dpDEyi4Eg179Ez4tPnVawhhFNvn-2B5wBpitLY2tK=
+OunYYSpCIK-2Fyf610wDvt3o832kdFyKQ7MyW2xDmA-3D-3D">Post this on Facebook!</a=
+></p>
+<p class=3D"last">=F0=9F=8C=90 <a href=3D"http://email-tracking.qz.com/wf/c=
+lick?upn=3Dpu9n0ps8hGF44zTMfA2zQU0GkxgAXkprbeX5p14xE2g7bUEi-2FkklDjRfZgCyNN=
+2w4DuL38H2KclUqMcvWrC4Yg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T2=
+8SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirs=
+bmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS=
+0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUN=
+tRNcE4wepin8XOHK-2FLO6ERlIywdSEIICdJw7RdkzWzlTwsw5inG4OfNaySrbGvpGR7Jx37NJF=
+Qy5p-2ByN2NvOhf9h9-2FVWyzXTnJenaO-2FYecIAEXKhGpUPwqeq-2FWRMn41QxkR1t2KQtNDl=
+oBM21LI8E9j3UqLpOtZNevhqB1iPzStAnmdhSM6weZ301rV33p36pHzR2aCPclxzwcHFrZDt-2F=
+N0Kbstfs0FhMzNkLZT-2Bsn3y-2FIN4O2h-2FqlP2kFBl2vi1mrfFQ6bxLpBJIf8ewQQi0vfBoQ=
+w-3D-3D">View this email on the web</a></p>
+</div></td></tr></table><table class=3D"outlook-cta"><tr><td><a href=3D"htt=
+p://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQU0GkxgAXkprbe=
+X5p14xE2g7bUEi-2FkklDjRfZgCyNN2w0E4khKFPzKgjrx-2FUe5PPnQ-3D-3D_B-2BIbELky-2=
+FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtD=
+bOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B=
+2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2=
+AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEl6W8Lhv3MVQfYgkaDAPIh2GGb-2FtEAdt79Lnk=
+DGOT2XPCSNhEZ9Xo4xUrJa-2FKd6UuOvp3W0G8ZBfMC-2BMhfiFVcah0bWD57rxSDsx7z0Izr-2=
+FOX9s6TY6OUUwokBggP86ykqfJHQY-2Fwqg2lRE-2B06vjDVTmVtu8pATJd5C8668kdMpAmirXh=
+BXlfzSAPULmA-2Bl5toDsYiFm54MDgixf-2BYoUCq8obfKFP1DQiMIyHqgJyrQLD55R5afNeQhy=
+6zkMnf5cQkAzF9f71QtKvZfrAgDs-2Fmw-3D-3D">Read the full email</a></td></tr><=
+/table><table class=3D"outlook-card"><tr><td><h3>Why is my email truncated?=
+</h3><p class=3D"warning">The interactive elements of this email don't work=
+ with all email software. To get the full experience of the Quartz Obsessio=
+n in your inbox, we recommend using Gmail or Apple Mail.</p></td></tr></tab=
+le><![endif]--><!--[if mso | IE]><div class=3D"hidden"><![endif]--><div cla=
+ss=3D"first obsession-card auto"><div class=3D"obsession-card-content"><h2 =
+class=3D"obsession-card-title">In the beginning<hr /></h2><p class=3D"first=
+"><span style=3D"font-weight:400;">Facebook: Where to begin with what it ha=
+th wrought? </span></p>
+<p><span style=3D"font-weight:400;">Last week, the social media giant (</sp=
+an><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMf=
+A2zQSlOYHmRp9ZmqPdJthhJUDZUWY2QnpCDJ1goXPFCeJfDgVrAnIhmAXzNwjBIz1xfV-2F3J6k=
+X0mF0qswov8FkLr2Hot7Pz52YccXeDV-2BUogVyocnBd5BxBTFgsyiy6P57mlj9k-2B66JHlJHI=
+xFmQdYvX6M-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B=
+-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOI=
+g0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1D=
+RRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEKEfje-2FmFBX=
+efnSSzHLKI-2FdYdTFPtvc6PA9epaTMELOim3RA7HmJKvAKZG5xRjlsazBmEXqt47SUrbhs7RZY=
+AuaajjRAfH2vZlR2RSNJJi24-2BTLmQptM52Wh8xau3M3PhY9KUu7xuTRLGHSrvrq7n-2Bg1-2F=
+Z3M-2Bs3-2B4PI-2BhdvqTP1Y7ep0rdDbWRGrG6pzBZPanSap0dMmc5jSnSTTi-2BiStOoQCHU0=
+mS-2FHO0Sm1sKdpZ6-2FbtEjdpAkadPqW2RxjeNX1f1reSkfpj-2Bd9I4QfOGB8-2Bg-3D-3D">=
+<span style=3D"font-weight:400;">which has almost as many users as Christia=
+nity has followers</span></a><span style=3D"font-weight:400;">) announced t=
+hat it=E2=80=99s going old school, deprioritizing publisher- and brand-prom=
+oted posts in favor of more =E2=80=9Cquality interactions=E2=80=9D between =
+human beings. </span></p>
+<p><span style=3D"font-weight:400;">For many critics, the correction is bot=
+h overdue and underwhelming. =E2=80=9CThe short-term, dopamine-driven feedb=
+ack loops we=E2=80=99ve created are destroying how society works,=E2=80=9D =
+Chamath Palihapitiya, formerly Facebook=E2=80=99s VP of user growth, said l=
+ast fall. He=E2=80=99s </span><a href=3D"http://email-tracking.qz.com/wf/cl=
+ick?upn=3Dpu9n0ps8hGF44zTMfA2zQavSEWI9sK4-2BBFMyRFyyqo-2F-2BjpC3F7bTb3kqdPR=
+Iq2lCoBIkXTFnhrW2IaR3WhJtVBu2jjcOVXXOiakmtVOvb91CAvivqfDW2yY0MGtpys6gUsMnf9=
+l3ZzX5J1N5T3apUg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8=
+-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXs=
+W3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap=
+-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE7MR=
+nwBP1eGWpIhbKbx4Nz3ZP9zXrKRDpkHV43YXKTbk6t-2BVNiOaA1WYT-2F04ulbC6QV8ylQ-2F8=
+tuUJ4FPaj8hA7VNPPNJsQiVtmqQm3LVsgbTxhNFPy5WdteZSL0CL8kQNEN7rm7tNgxz8y5KjhAl=
+NFCSqV5roxa0a9JBrSoLMyAtoJz0ZhIo1tTXtueGdkp7Rvu1U-2Bn0TrRSP4lDD7Lip3ZvArU0p=
+zL9XuqVmjR-2FwVCnk6r2Syc4cCA2uGfY8KtuCjgAUdp6uyPRyEUw1yXMBKQ-3D-3D"><span s=
+tyle=3D"font-weight:400;">just one of the Silicon Valley insiders</span></a=
+><span style=3D"font-weight:400;"> who </span><a href=3D"http://email-track=
+ing.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQdbH89MSNK7-2FQtup5h-2FhCZli2=
+QrW6tJuqbVv55Di09FKQu8b6RCQOqjkwFWBQYRXKGTokKbmn8KSgVO8W0bAI-2F-2BYFLX-2Bh3=
+MSCoadXyBoiUQ-2BudB-2B1Gh7kmSszzlmGyL4NXBTPp1qBcHKNo2ZVtY-2BqzY8q1ok7kAgA3n=
+eZY-2FLzaeyrrRgyA-2BxVamZen5BpA9J3rOoguyDBP02VpsMcR14b6w-3D_B-2BIbELky-2Fkw=
+H3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOe=
+Yzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly=
+6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHf=
+z3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE6hs8J1FblZB2brpSj7Jz8IS6-2Fi7ROC5LmoQD-2F=
+FrsuyrrPIl7iGEnhq5cXBg2jOebYbCJSbqhVfXBSLw3BYE8i7Ps1Vs-2FcwatRnbvFQ6TcLgx-2=
+B0bP-2BPaqzfVwJbV7UalKoxiZERjPpUgjzE5icg-2FBiwlocc0FeHTZIk4tOf3ZM9e5MC-2Fd4=
+j5JHhWhcbBiqjKtDQT-2F-2BJdD-2Ffnu7FXPeUvDOmbaWArBJIUKhNY4uNt5DLk-2Bedt3eo7D=
+rzbbJvLyLSqV4FYzGtlurpNAhChXXYPuUA-3D-3D"><span style=3D"font-weight:400;">=
+have spoken out </span></a><span style=3D"font-weight:400;">about the ways =
+tech companies exploit people=E2=80=99s psychological vulnerabilities.</spa=
+n></p>
+<p><span style=3D"font-weight:400;">Facebook has also been snapping up comp=
+anies like </span><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu=
+9n0ps8hGF44zTMfA2zQUpsa3a5u-2FjhY4Witgn9yo-2BVhZ-2FEyryY7vOqLVraJWMokVA6Ig2=
+XaxXHzplLxvg5au-2FCfu9TU4ffssldPtSc-2FaczbxWi1EdhHLbvcGoqoBxusqLUjw-2F9B2Zm=
+DgEEOlo69g-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z=
+-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrT=
+COIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMA=
+j1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEaclJ2DuBU=
+WejLavxGNk-2FwGsTZJ7I5FqdvCp1Su6gYm3ZfjkyrjW7-2FtZOeD3WNRRhxOeGCSc-2BHi6z9f=
+rfY-2FV-2FsCY0AuR0Uzl71UAK3u-2Fy6-2FZBV6rb80mdFqfd-2Br4wIRKfOF-2Fqrgocl6u8S=
+tvv3d-2BVE17RmMcGSZOeL7O5cHyjM-2Fu7475fTkyEOtiFYctP6Vp-2Fcvj4kROtJX1bNn3wEP=
+maclCbWCdBs-2Ftu-2BAdU9w-2BZHbA45iUjuKyb4huoJkVPoSPMuVd4JeXOyis9X6Ih5hTYJA-=
+3D-3D"><span style=3D"font-weight:400;">tbh</span></a><span style=3D"font-w=
+eight:400;">, which lets people send each other anonymous positive feedback=
+. The fighting spirit of tbh can be traced to a different era: What if GeoC=
+ities, a famously positive web hosting service, had been the platform that =
+took off instead? The web, and the world, might be a very different place i=
+ndeed.</span></p>
+<p>=F0=9F=90=A6 <a href=3D"http://email-tracking.qz.com/wf/click?upn=3DTGl3=
+29bkKRGwDIU8UVmc96xdBzOZNRb9aT1wyDD1po3WoXccm5sQdQpI2KSJzzvepgyHt0M3laH6Nke=
+PX-2FIOlh0odYvHafyKEf-2BtS3o8hsRnQ27PQgEJOEtDr2k3-2Bi-2Frle3-2Bvb9TLOk9VaR3=
+R7bqEhTC-2BNTp-2F5nAwpVQuv9QkED0OqzgsrI0ib2YE01CSmBq_B-2BIbELky-2FkwH3aVVxN=
+xsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpo=
+h-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMe=
+QLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22V=
+AJAonbFqDJt7iTeSE6oLUNtRNcEe7b-2BRnDe32AJd-2FanqxFIdtkCWvXkE5Akyxf-2FW-2FgU=
+Qlhzf64Pq4E-2BChImuxeH33jTvqo8gFs-2BcdGE0TW7lwb0GrIoZj3ND40RzOoBYFaQpBNNZYo=
+-2B6mYCxpqDhBlYlu-2Ble08VSQGjmWu-2B1A3mTPOTQhxMYlBWkfyAtEO7qq3Clf0HzvULZHI1=
+zzwYk9eOguMAXO-2BgTZiJw97t4cEKHsr3b3C3PhQS9RPqvaJEju3xTyRHWtdYx3nC9YvpF3044=
+GrHT2MqCZAhRsHq9WHH6Ctr7w-3D-3D">Tweet about this! </a>=F0=9F=91=8D <a href=
+=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOAxisuw=
+pWf9nPds0AH6I9lidrAttQYpzuArqNgp-2Fd-2FsEdeUifyMk7oDETEi31iD6Z4ST9H3Ir-2Fd2=
+ij4lydpSUcgzBpimqtys0kS-2Bjv9Ia4Lyt9hu16hd9ldDctS4eN9OfAh-2FxYI9K8oMRhb3Wuu=
+LVBAw1KYEItc64dbSi7DqiXTaxyCo5l0e4xXla3-2BZoXKA-2BW78rSl51P4skl2GAcXWVFk-3D=
+_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy=
+0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufS=
+BXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ=
+4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEd1jttloaiXxu69MwD9Oeo4OjY=
+6A7kuHrSmJcukyLZm-2Ban6MUFzyN-2FchcLtSED5ZygLAVWSLzmN09hyETJKuAMugvfRG8-2Bl=
+89utB2HGPWi3Ad6LUjBIrAMVWP-2BVMMnALkBmsxeyZGlxkkfb9LuZgABRB19MC9GpZPvGq7igR=
+W37m5CUWZoXmegW0Ock8iy2cQPYJ0uIu01MCgpO1bqYST09O8CyirJhJ9xJ3M-2FxkHeaBsc63w=
+w5wLHukbJpbu-2FkDmLET5KNSHrvbyWV4TZSwEJw-3D-3D">Post this on Facebook!</a><=
+/p>
+<p class=3D"last">=F0=9F=8C=90 <a href=3D"http://email-tracking.qz.com/wf/c=
+lick?upn=3Dpu9n0ps8hGF44zTMfA2zQU0GkxgAXkprbeX5p14xE2g7bUEi-2FkklDjRfZgCyNN=
+2w4DuL38H2KclUqMcvWrC4Yg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T2=
+8SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirs=
+bmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS=
+0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUN=
+tRNcEywaajpQB6ynNSBi19w4Yz5qVsWu8Af2XdWvuCEJK3IPjYpa8jOg9XeelG744fa2WSyUtqC=
+Q0p5JLTr9F3py-2Be6Ksv-2B5ONmO-2Bxx9E9yKxOi4m6Uzn7-2FvPh7kQr-2BdbXDCBjwkmiD-=
+2BXWhZocrc2qb9YD1DQo5xdDTynzyCK8Q2O3Z8Cw2zkS3blXQkLrNfVrbjuAFtkWvDKmZvG5p-2=
+BawapCXUfhorUs8y7YHFxyJl0eY8BREa5S6d09gkvkotCrzXhgcjYmzowBQTrpzy3T1aN1Eg-3D=
+-3D">View this email on the web</a></p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">By the digits</div><p class=
+=3D"first"><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZ=
+wEq6FtFfmnIOGsq-2BoRaeSIJcihRqG9bPIyxAWWK-2FxBbj-2BhBhD25gYI8-2BrhIXwZwvHmf=
+GsEalbtkGA-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z=
+-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrT=
+COIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMA=
+j1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEW6mFSDCkV=
+Yw0MKK3UpeXP49KUqNtavllqX75UpCwdOQUw-2BpUm-2BATEOG7RV1kXTuQtVEge0foYOGVaNqi=
+F19gSAX5TD1NWO1z9whWkdR8CxPQce-2BdZuu-2FOANd-2B5HB2EZzuK6YRyyJlUw3Pp4xN5gW3=
+kq-2B3CvV-2BaTb6TWm0cVaHWSh-2BNhSsUx2Cp1mbhmXs5klPPPI5AUgTyPxFZteHbrii9kWi0=
+wgIPkShcQqWxGacWqcSuYzjE6n10opXZqxC34NM6fgGJPh6ZJiVnauInjOnA-3D-3D"><b>40:<=
+/b></a><span style=3D"font-weight:400;"> =E2=80=9CNeighborhoods=E2=80=9D yo=
+u could =E2=80=9Clive in=E2=80=9D during GeoCities=E2=80=99 heyday</span></=
+p>
+<p><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMf=
+A2zQYcL49Fh8W7rRvKD8oQBtNIvT-2BazGEMrDP4WbwSSADGu_B-2BIbELky-2FkwH3aVVxNxsG=
+jGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2=
+F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLf=
+z8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJA=
+onbFqDJt7iTeSE6oLUNtRNcEYBJpSOpAoN6qhiz4O-2BnoDPxIllFvBkP5HELJFfrqgiFd289YH=
+44Gl-2FsBJzpIKDls3fcl9LcdqWD6JYuTTzC568jem-2BehM81KBOSMSq55As1-2Fm13xp7rAF4=
+MyV2NxxJeIcLnFePplMfBDRrHv36V7BNpz-2F-2FsTMGlwbfAVwSH48iE-2B9-2Fmi9WxomsBwn=
+FMEu02CGJF9r1kGWIxUCvjsjt9Sijq3nT1JEJQp6NM-2B4CRelx0hHBg9ge3VOVbbD9YrNqreNA=
+pI08SnL22L-2BLtCOz8COg-3D-3D"><b>$4.44:</b></a><b> </b><span style=3D"font-=
+weight:400;">Current monthly price for a GeoCities Pro account through Yaho=
+o! Japan</span></p>
+<p><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFf=
+mnIONqTbIgF3HiLai8dCzmZ-2BaDH62gOOup1ZpF9O6e99-2BiEU19ox2gRfbMSb-2F-2BUtNIs=
+FJ4g-2FTV6CaUirtSErvh0r44-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28S=
+oxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbm=
+QulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0B=
+S5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtR=
+NcEZtS8wMbc-2Flw53NU1UCJO-2F5Y0F3UhtYqJBlpd-2FSmn7F-2B1XzMkumLZAwLUBZZkE8KX=
+-2Bp-2BJC8ikwzR717sj-2FbGskMA1pEteB-2Fc68dNNT8D3-2FMXnuvtzGyyYIzWwTFXmjsphe=
+Yw6jjmmH-2FKMnJwp0atSYstLDDU5PpQ28idG4jGEdmTPM5RYf2MbX31iZNEx6xBtELtY-2B-2B=
+KnjfIqJwwN1Sj4pOf-2BCkxQNSgSjoN7S3Ewxutba5wgEwnXj6nkopNoKZuhSxSQII9FUCXR0RY=
+2kxSlzQ-3D-3D"><b>2MB:</b></a><b> </b><span style=3D"font-weight:400;">Maxi=
+mum size of GeoCities pages 20 years ago (about the size of an average gif =
+today)</span></p>
+<p><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFf=
+mnIOLRqk93X7ADxmFHGLXNtU7j81FvgiOdCQV8KiEVuTo2jokJEXXGNeWgvUBGacnjO9g-3D-3D=
+_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy=
+0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufS=
+BXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ=
+4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcETCIKf1-2FcssaTmvLzd8kyPwn=
+jdI7MeIvRgIRhJnc0NVgQ-2FZd3B3ALgIW-2BAMcoyEUhNt64wpj3nV33AbIB1lFiixXwdamBzO=
+EY1f9-2Ft0R8TGT6kHUjF4yP4vOhRCRSkD0RFx-2FB19gEkzqicJfukLqxpNc5kwfMJE0-2BsEg=
+STFgE6FhqXcIaats-2FcsvUacSyPD0hIWBQWFktZgIf4RHUHQz4R4IFQvPkI61gTuWsMx4xddPn=
+xmelPjHELbWTSgdZcmx5gE3e-2BwuJPdCjvkywVzd57Q-3D-3D"><b>70 million:</b></a><=
+span style=3D"font-weight:400;"> Number of people online in 1997=E2=80=94th=
+e year GeoCities surpassed </span><a href=3D"http://email-tracking.qz.com/w=
+f/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOP83K-2FGLlAQ3fok-2FGvYjUCziZrYOZjCDl80MN=
+ssyJE-2BT0m5Ms3e958H7T676C-2BLT8YSZgIF-2ByS9mQ4QwXArdJeInB9S2iuep-2FX9sff64=
+TYh6_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa=
+9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpU=
+cufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BH=
+mPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE4pCskmTlHpl9072BZfdR-=
+2FMXk-2B2xyohOWFS0Y2vgyYLArYImchEG8v3N19Os1RtuK-2BhKSlRAs-2FfuZUYtJnPFs3R9W=
+jaEenYS513HrEyAEyh6AfZd2zqB86-2FqBPfTzpPeVZRIkdCWTkYpRnOBK1-2BnKRae8LD4En92=
+9oSTf5rrRe-2BPI6Vjz4oXjtFH3UenTobcXrXj4Fyp9DyFZHwOIbP8RJ-2Fs-2FGctA5oIkQ6Hz=
+c3HpH7kW7pci3-2BDA-2FlFGtGZHVKfdhB8hOj3pP18bwMy3nNcfWA-3D-3D"><span style=
+=3D"font-weight:400;">1 million users</span></a></p>
+<p class=3D"last"><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu=
+9n0ps8hGF44zTMfA2zQUpsa3a5u-2FjhY4Witgn9yo-2BVhZ-2FEyryY7vOqLVraJWMokVA6Ig2=
+XaxXHzplLxvg5au-2FCfu9TU4ffssldPtSc-2FaczbxWi1EdhHLbvcGoqoBxusqLUjw-2F9B2Zm=
+DgEEOlo69g-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z=
+-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrT=
+COIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMA=
+j1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcETUSOfTpck=
+l8-2F6yAeKoZ1qKv3r7SqRN1h4BwRAjqj0Cn-2FJg4ws-2FNz9RxtHoLUuMeMmPHQrUfOdDOaHL=
+v634FPiv88aUoc8iaryEk2Tv11FlVrG0kikJYrv4A9w4j-2BY83fKCSV-2BaRhs22pM6QxtVUyf=
+eBVn0esPSbZ9ByG0i5t9-2FCmBlGAehhHAl2-2F3ECY7j9Mv3MXkfMR-2FP0wJ-2BmJ5FhPQAxQ=
+Z8jOGoP503EjiHJGep8XCDXaSGMFXPrcph0wMY7ybf3qpUiT4i4UWUFzp90-2Bpg-3D-3D"><b>=
+$507 billion:</b></a> <span style=3D"font-weight:400;">Current market cap o=
+f Facebook</span></p>
+</div></div><div class=3D"obsession-card auto"><figure class=3D"obsession-h=
+ero"><div class=3D"obsession-hero-image" style=3D"background-image: url(htt=
+ps://qzprod.files.wordpress.com/2018/01/giphy-83.gif);"></div></figure><div=
+ class=3D"obsession-card-content"><div class=3D"obsession-card-kicker">Orig=
+in story</div><h2 class=3D"obsession-card-title">The people in your neighbo=
+rhood<hr /></h2><p class=3D"first"><span style=3D"font-weight:400;">Like a =
+proto-social network, GeoCities was a hosting service that let users build =
+their own web pages but also organize into neighborhoods dedicated to share=
+d interests and identities. If you were into aliens, you=E2=80=99d probably=
+ build your virtual home in =E2=80=9CArea51.=E2=80=9D If you were an art ki=
+d, you=E2=80=99d go to =E2=80=9CSoHo.=E2=80=9D There were also neighborhood=
+s for extreme sports (=E2=80=9CPipeline=E2=80=9D) and the LGBT community (=
+=E2=80=9CWestHollywood=E2=80=9D)=E2=80=94one of the first inclusive spaces =
+online. </span></p>
+<p><span style=3D"font-weight:400;">Even if you weren=E2=80=99t a member, y=
+ou=E2=80=99d probably recognize that infamous aesthetic: =E2=80=9CBrimming =
+with blinking, moving, garishly colored text and animated dancing cats, Geo=
+Cities made MySpace look like a bastion of elegance and restraint,=E2=80=9D=
+ </span><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq=
+6FtFfmnIOLQyKsquDsQDhfo-2B6GtDXSqsp7jfFA-2FlKbNjAr1VGt88Ho2JXoj8ZhbeEKydBC0=
+-2FctMSWmpaqtan8L4T0IMy2v3Nv0va9sdPU-2FvsCQpw-2BUVtfHeIk45f3YnrVxyi2pJThg-3=
+D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa=
+9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpU=
+cufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BH=
+mPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEDPbDyxyiLxluwnpyn-2FP=
+R-2Fp5-2BicSYbucKCmDdaRK3OG6raz-2FC8fUz9avF-2BwFkq-2BravritOhsoWWFpHpplZ20k=
+zboIrm-2BC8JvD7RShp0QmVqnOqDbYDuXNcCS4J1-2F9IdZBRiZ5rg3fjogWs7kcz5OgNmJrGS0=
+VxyJ2XE0YrUfyqlfDQXkQx59AASkDJynfd6-2FWslCy8HiSHH6ZE76vMbbrEo2u2g-2FTkSVvJY=
+J8Aj-2FZxY4xXHC3hfiHbSLVCJJTeZwktjujAzJO-2BWBRpYBR5mRbIQ-3D-3D"><span style=
+=3D"font-weight:400;">is how Farhad Manjoo put it.</span></a></p>
+<p class=3D"last"><span style=3D"font-weight:400;">But at the time, all tha=
+t blinking signified something to users: maximum creative freedom, the abil=
+ity to build an online presence that expressed who you </span><i><span styl=
+e=3D"font-weight:400;">really</span></i><span style=3D"font-weight:400;"> w=
+ere, and the opportunity to connect with others like you.</span></p>
+</div></div><div class=3D"obsession-card quiz"><figure class=3D"obsession-h=
+ero"><div class=3D"obsession-hero-image" style=3D"background-image: url(htt=
+ps://qzprod.files.wordpress.com/2018/01/geocities-welcome2.jpg?quality=3D80=
+&#038;strip=3Dall);"><table><tr><td><div class=3D"obsession-card-kicker">Po=
+p quiz</div><h2 class=3D"obsession-hero-title">Which of these was not a Geo=
+Cities site of the day?</h2></td></tr></table></div></figure><input type=3D=
+"radio" name=3D"quiz-3" id=3D"quiz-3-answer-radio-correct" class=3D"obsessi=
+on-quiz-radio-correct"><input type=3D"radio" name=3D"quiz-3" id=3D"quiz-3-a=
+nswer-radio-1" class=3D"obsession-quiz-radio-wrong"><input type=3D"radio" n=
+ame=3D"quiz-3" id=3D"quiz-3-answer-radio-2" class=3D"obsession-quiz-radio-w=
+rong"><input type=3D"radio" name=3D"quiz-3" id=3D"quiz-3-answer-radio-3" cl=
+ass=3D"obsession-quiz-radio-wrong"><label for=3D"quiz-3-answer-radio-2" id=
+=3D"qz-3-answer-label-2" class=3D"obsession-quiz-answer wrong">Divorced Dad=
+s</label><label for=3D"quiz-3-answer-radio-3" id=3D"qz-3-answer-label-3" cl=
+ass=3D"obsession-quiz-answer wrong">Area 51 alien website generator</label>=
+<label for=3D"quiz-3-answer-radio-1" id=3D"qz-3-answer-label-1" class=3D"ob=
+session-quiz-answer wrong">The Official Cow-Tipping Homepage</label><label =
+for=3D"quiz-3-answer-radio-correct" class=3D"obsession-quiz-answer correct"=
+>Kenny Rogers Roasters Fan Page</label><div class=3D"obsession-quiz-message=
+-correct"><strong>Correct.</strong> If only.</div><div class=3D"obsession-q=
+uiz-message-wrong"><strong>Incorrect.</strong> </div><div class=3D"obsessio=
+n-quiz-fallback">If your inbox doesn=E2=80=99t support this quiz, find the =
+solution at bottom of email.</div></div><div class=3D"obsession-card auto">=
+<div class=3D"obsession-card-content"><div class=3D"obsession-card-kicker">=
+Timeline</div><p class=3D"first"><b>1993: </b><span style=3D"font-weight:40=
+0;">GeoCities formally launches. Co-founders David Bohnett and John Rezner=
+=E2=80=99s idea was originally called Beverly Hills Internet, inspired by t=
+he </span><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZw=
+Eq6FtFfmnIOIwmXmOZzWL8QWWqtjvP4I4-2FqRVgpB8WZtG9YmeEguQbvi-2FLHYn1xurAwX5Pt=
+fyzOw-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2=
+BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0=
+fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRR=
+LwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE0UDnQkMrDLyhgk=
+ShT78AqmNYQ1Y76Au1y14DwgQ2DLTj8XjEnFidSGDYaWiUZDuifTYAb5LfCSopUXOh2NifqWZFX=
+RtiaMPQmist5srO94XVEsj1vTMlCebakg64wHY8tzGpCYyEm-2FZMfignMcWplMYo1G234xOnnq=
+HrY1RtNIgSTP-2FGeFR0NKQwI5LtvgCDEYKYDhHI4WrfxMQcwk9fQdC-2B-2B-2BKaZmmx4rlv8=
+RayTxb1oisnjkfQB4asd-2BtHCjY4KRckbi1KHkuTjLgQE0J3gg-3D-3D"><span style=3D"f=
+ont-weight:400;">Trojan Room coffee pot</span></a><span style=3D"font-weigh=
+t:400;">. =E2=80=9CI had the idea that we would create a series of communit=
+ies around themed webcams. I thought if we give away free web pages to peop=
+le to create content the webcams would initially draw the traffic, then peo=
+ple would create web pages around these themes,=E2=80=9D Bohnett told Quart=
+z.</span></p>
+<p><b>1997:</b><span style=3D"font-weight:400;"> GeoCities surpasses 1 mill=
+ion users, equivalent to at least 7% of internet users at the time.</span><=
+/p>
+<p><b>1998: </b><span style=3D"font-weight:400;">GeoCities goes public, lis=
+ting on Nasdaq at $17 a share before </span><a href=3D"http://email-trackin=
+g.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQcmpvwOxyog-2BgPx9J56AkSLgWgXII=
+xL5Aotcc4JrQHfbTKyYkus-2F24MHwgGFPkn7bd4cYoC5OaFspoCsvTQuRnc-3D_B-2BIbELky-=
+2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXt=
+DbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11=
+B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf=
+2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEx-2F6RxFnMMi-2BXtxXFp9kMXaFP9Gn6ewu4E=
+WTWnuQa7Eg2rZvXsvNQSyDTjfuXxpUqbTWSdrUmU50BBvqoQkKZ1W12t8FE15bj0sisq-2FzzFn=
+5NGY04STJLq5uTcOjyFS3J4scWqaGi-2BxbHwGLpjGNNXZD33MTf0b6sLWDlAJeNjI38cZfqzPf=
+Kx0hxwKUGLQg7HOqqjjrQFs84IIfn74qx4L33PKhanMt1Ww94j9oCZ8f9mQ-2BWGLCUteoRPR7w=
+PWQmERZTgbtbfL4xlje-2ByfOEDw-3D-3D"><span style=3D"font-weight:400;">nearly=
+ doubling that price</span></a><span style=3D"font-weight:400;"> in less th=
+an 24 hours. The IPO valued the company at $521 million, or about $750 mill=
+ion in present-day money.</span></p>
+<p><b>1999: </b><span style=3D"font-weight:400;">A still unprofitable GeoCi=
+ties is acquired for $4.7 billion by Yahoo, which has a knack for poorly-ti=
+med purchases (sorry, Tumblr, you=E2=80=99re not special). The </span><a hr=
+ef=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQeUcZ=
+CPSQuVbled2Pwc03xvYfRVF4yImwntUUUdX5MmNHHA3DdRlyyoPHxEbBtifag3Se4ZJR4uLfbrd=
+QwX3VASVh4E9oZqnCNIrSxST-2BTJ3_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T2=
+8SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirs=
+bmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS=
+0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUN=
+tRNcEx-2BuxPiZiJJreqeVurI-2BEk6tp-2F5JU3t5u9-2Fjgj14PF3ORZN-2Bk6vgBid29LnkN=
+6L7a3gpdkexojF-2BNeJvHTcbYlUutzdSti452-2FFaqELaBzlrwEej9DYhCr6cPhwnR5Cijtu9=
+i8OoBFr9Sq6VWxWklKGzjtHh5AW2fr-2FzPAg7ZuTv-2BsG-2FeF51Dv7X3mlAQFiKA7NB0CIy9=
+gDrjjWSXIypLU07h27yEGbvfLgEdpFZt5iTjc6ld1-2BeA2Ykg39RieIxkqkSXjX-2BLo1Ll-2F=
+R7gnzGGFg-3D-3D"><span style=3D"font-weight:400;">Wall Street Journal</span=
+></a><span style=3D"font-weight:400;"> described it as one of Yahoo=E2=80=
+=99s signature =E2=80=9Cdeals from hell.=E2=80=9D =E2=80=9CHaving a page on=
+ there became a synonym for dilettantism and bad taste,=E2=80=9D </span><a =
+href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fmxDTHeZZ=
+dSbveg3-2BHD9UK0Ovr-2BkknETNyq6LZRZlMCeUivZDI_B-2BIbELky-2FkwH3aVVxNxsGjGeH=
+Hlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud=
+-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8=
+RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbF=
+qDJt7iTeSE6oLUNtRNcEUvVii-2Bb0bnqSPz8xX202ErDFw-2BLpBI6i5C1pAvYfn6OhK8w-2Bg=
+6FwQv-2BnMw7PJXRChCQ5xosCr9VQ9qh29N7QpyTZSPJjBT8U8S03YS2710iMzJfe-2Bi3hCtOT=
+RlN5YnOhvM3RQEJGhJJpl5DQyHXb28kJqvLKfzF9ckAjTPgWoRU2zP0xDjOyOgpSTeq2S9RpI4t=
+RmDhHoRi-2B2vvhlOPMPVKvql-2BZnevI0DL-2Bcuo0vpOZY3YopvFeVtDzvwcJ75K-2Bdonjs8=
+KUoOtMkYTzuc0u-2FQ-3D-3D"><span style=3D"font-weight:400;">Olia Lialina and=
+ Dragan Espenschied</span></a><span style=3D"font-weight:400;"> summarize o=
+n </span><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYO=
+T87fmxDTHeZZdSbveg3-2BHD9UK0Ovr-2Bkk176hLkIq8kmfle5hrqkge_B-2BIbELky-2FkwH3=
+aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYz=
+qwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6b=
+pdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3=
+bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEkHi3ebJuGAHrS6Y0w9binstZPQ0vGniiCJMLkY-2F9p=
+EAJDr9BPCoLIV-2FRw7BYgBZvzPAxki24mLelYHtFhNFMyxF6RezbZUiFVXBTlvZaAXycCL2WqI=
+llqQEKm33NB17hO2gBmO0f9IXWnjouPsZKODIHPGBHl08s62lFEiWGYFhAwnxVnBGt4wrHs6GfF=
+7mpMRWZNu7GMRCyTBVJW4qXE1g0LUIVwqmlzyOFWXYGBqpp1BAlifCzy36fjWoMCW596o6vQhOY=
+iVV9pgScLSmwTQ-3D-3D"><span style=3D"font-weight:400;">One Terabyte of Kilo=
+byte Age</span></a><span style=3D"font-weight:400;">. =E2=80=9CThe time of =
+personal home pages was counted, being replaced with profiles on social net=
+works.=E2=80=9D </span></p>
+<p class=3D"last"><b>2009: </b><span style=3D"font-weight:400;">GeoCities i=
+s shuttered, as Yahoo pulls the plug on the core North American business an=
+d redirects curious users to its Small Business service. GeoCities lives on=
+ in Japan, however. As of last year, at least 17 neighborhoods remain, host=
+ing everything from </span><a href=3D"http://email-tracking.qz.com/wf/click=
+?upn=3DnnqZ0gDDZwEq6FtFfmnIOIkFilDzpJTtabULL35aGQH6FEv9i5gXKSA-2BFVYcS47t9w=
+KbXcFqBfZZodjFsF8j5g-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28Sox=
+poZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQu=
+lyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5=
+lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNc=
+EOPJpeaYQL9WunwVaCitVz2qZ4Po0-2Bm2S-2FPHIfPnJFv1ScFTN18Ubak5XfURflbUaiZU05q=
+cb-2BJT5ksMmUTaVLDelI8mgshUS-2BplU-2BdJCgjERHli7LNoDnGW3dtB2QWBXNIqKJ1r5-2B=
+6ioaC7HqoVmFNwEh82BrlhcbaAGFEa1rsdUGTKLvfxXUzkCwI1WYpAvt9vKuM-2Fnaz7Qso7f9U=
+1cqMOc-2Bqhl9Otnp-2BbxtV3Hdpxe6nV0YvDy1hacfmO-2F3xf5b8LACTXRd21M3UVhcrADrg-=
+3D-3D"><span style=3D"font-weight:400;">AI singers</span></a><span style=3D=
+"font-weight:400;"> to </span><a href=3D"http://email-tracking.qz.com/wf/cl=
+ick?upn=3DnnqZ0gDDZwEq6FtFfmnION7YZ5XvLi2rRbBgy5U51iu0fqHBdiNcb-2BzsB1dTMDK=
+INGzUDdCfz0if62FOlnNOIw-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28=
+SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsb=
+mQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0=
+BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNt=
+RNcE4URK-2FPmq784C-2B7fhD-2FpNf2G-2B0l-2F-2BVFIYDIXGIEqNPpzUL9dRPNmH8A6Bd5Q=
+YDgdG0Z2BE3xilMDcaqBerv6giAWXApZZ-2FoN1m0YKRWg3BP8cx6oAcUBndkPx6FdPBkHWRrx2=
+rDZ11v2XS5b-2BCjF-2BT3W1fjHVYRloqXndD3xpoVQMiBBfu5DlZ4ansSPhAzYKNA0Xn-2BFvq=
+xd0p1E4-2F5cFtwZhwzZzpHJ6N6vWUdWj4xz9CE4FmVhcKPSPfZ2v9oBmLymMoj0Ixpzb1071Qb=
+FJtA-3D-3D"><span style=3D"font-weight:400;">Japanese folklore</span></a><s=
+pan style=3D"font-weight:400;">. </span></p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">Department of jargon </div><=
+h2 class=3D"obsession-card-title">=E2=80=9CGeo Cities=E2=80=9D or =E2=80=9C=
+Gee-OS-ities?=E2=80=9D<hr /></h2><p class=3D"first last"><span style=3D"fon=
+t-weight:400;">Believe it or not, a </span><a href=3D"http://email-tracking=
+.qz.com/wf/click?upn=3Dlr99qNCBgfOak-2BOc2TEfG1sd99h6XWAiQFYq9fbo5fpVap7BoN=
+DQKoy1SDlQQA5Kprqo9jr-2B9D31bzmwIXrf87ZutgiAwWwk2tBQR0yUlxo-3D_B-2BIbELky-2=
+FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtD=
+bOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B=
+2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2=
+AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEWZdFgws6Pw3ZxCrDS0Z06T1xJyMZr134D9qvZe=
+F0ylE4P-2FTDw0zU0QAjlwz12E0xDKnyBVO-2FK7QmwxBD2pTOpgJ6GLqxv1Hz-2FuZW5bay3VH=
+-2Bmhv4Mk-2FuhGHkdtRz5ltRpCfrtsXewleclHc-2FR1P9QkR9KkQe-2BYNp0jCzCOiVnczH6w=
+-2F2WOBGtv8j4BqGM8LoR3NpNnzlECsOcdEJ-2BbeNjC2G5-2F7o9GrzEc0TbjZAsIvb7R-2F8d=
+LrKcp-2BTEATl-2BCIwFvKDSZmWcE4dYA6VsRE5Dg-3D-3D"><span style=3D"font-weight=
+:400;">debate still rages about the official pronunciation</span></a><span =
+style=3D"font-weight:400;">. EHow=E2=80=99s video on creating your own webs=
+ite uses the latter. Co-founder David Bohnett goes with the former, mostly =
+because the idea for GeoCities sprang from a region-focused approach to fos=
+tering online communities. </span></p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">Fun fact </div><p class=3D"f=
+irst last">The classic <a href=3D"http://email-tracking.qz.com/wf/click?upn=
+=3DM9ZiF7udzYOT87fmxDTHeZZdSbveg3-2BHD9UK0Ovr-2Bkk5yFqJAETDXMd23rXWwHDleFnr=
+E6NmZoBcBUwIbZbbDA-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28Soxpo=
+Z8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQuly=
+XsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lX=
+ap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEj=
+ztq7tVfyldXoJx531-2Frpq-2B5ExGnHfgSFJMP1f6PUZUoClK75LaNytTFac4iP31kPHvzCmfh=
+vSEehFWe5aFE3-2BCvB-2FajmOg1OvYDojMvauql2pYmFKXeo2DTDc3IUkkBNTWUtNaiCgdmAVY=
+0s0U1Sxw2vDjZJUtAyL4xPJqjhWkC-2BiPJVgi1a-2BE2UynJtxOvCA2OWbh-2F-2F1SfXZ1V8c=
+92ZM4A87HsA6kbttj3OwIcHn-2BrxRLdTDK4ZzqRlTfBmVWVcjAkCZyjCwC4PMH7RJDU8Q-3D-3=
+D">=E2=80=9Cunder construction=E2=80=9D digging man gif</a> <img class=3D"s=
+ize-medium wp-image-1184337" src=3D"https://qzprod.files.wordpress.com/2018=
+/01/giphy-82.gif?w=3D40" alt=3D"" width=3D"40" height=3D"40" /> =E2=80=94am=
+ong many other animated icons=E2=80=94was created by an early adopter named=
+ Steve Kangas, who<a href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9=
+ZiF7udzYOT87fmxDTHeZZdSbveg3-2BHD9UK0Ovr-2Bkk5yFqJAETDXMd23rXWwHDleFnrE6NmZ=
+oBcBUwIbZbbDA-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2B=
+F3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3e=
+QrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2F=
+JMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEZ7T0JB=
+oKO84nwZyqkwQjIZFn0OpUFwm8BQcE9UsfO4LNgiXSRrfqF-2Fezc5eyWsv36-2Bo66HW5aBuFP=
+DS5DIyUVA-2FyanvnHxLQ08jp5Lm-2FoWYpqL7maR1FRnhVOW63jgPkN9KzeM2RYBECMPJ1NBKM=
+4cZo2UXFQdUJS8dO7AE3ddOrdROuHD8axB5D-2FndirSk2J9XtoSzwunK-2F34lJJskSzMPQ55S=
+H3oFmuOd2ulfC9tAc2C6QY5bO0-2B0JEqUQp-2BZ-2B6yEWs6G5zZqD3oVafXw-2Bjg-3D-3D">=
+ quit his job in 1995 to spend 10 hours a day online, surfing and creating =
+web projects</a>.</p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">deep roots</div><h2 class=3D=
+"obsession-card-title">Credit where credit is due<hr /></h2><p class=3D"fir=
+st"><span style=3D"font-weight:400;">At a time when most online interaction=
+s were built around rapid-fire surface-level relationships that unfolded in=
+ chat rooms, GeoCities stood out as a new model for how to experience digit=
+al spaces. =E2=80=9C</span><span style=3D"font-weight:400;">In GeoCities, I=
+ am given my own homepage, where the friends I met on GeoCities come over=
+=E2=80=A6 This experience is similar to friends coming over to your apartme=
+nt, hanging out and having a cup of java,=E2=80=9D writes Annie Chen in a U=
+niversity of Michigan </span><a href=3D"http://email-tracking.qz.com/wf/cli=
+ck?upn=3DnnqZ0gDDZwEq6FtFfmnIOHGASDZmkUASgM9CmZEwESSWbhN3GayUFJMhVW3UTWq0wo=
+DKxNH48PPjHVxU2mYB5w-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28Sox=
+poZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQu=
+lyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5=
+lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNc=
+EiTmFqAZqWNIPRI1SDSYKU3TRynTWjR8fvcoHKzfXq13fQrMhnJO5XhGQeb5OLwtRdeTYNEXiU4=
+iHuvCeMJfbRd23eAxoNYGiee2bo-2FThVX9psnVSYXx52gN-2BfjlA0IL-2Bph15SHIOrLDxHdP=
+Mg1Hbptf4FQeihZRy03gSFFCnfD8dAdcDSVzYh8vWt6U-2FX2cpdrovMuuiqWeahEgmspxYHM2l=
+Kk1ExA6eBBK-2BUkO7SaxZqU-2FavnkHFuXXALpBbijL7yP-2BsQ5I585jJuqVbLxqZw-3D-3D"=
+><span style=3D"font-weight:400;">paper about the platform</span></a><span =
+style=3D"font-weight:400;">. </span></p>
+<p><span style=3D"font-weight:400;">At Slate, </span><a href=3D"http://emai=
+l-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOLQyKsquDsQDhfo-2B6GtD=
+XSqsp7jfFA-2FlKbNjAr1VGt88Ho2JXoj8ZhbeEKydBC0-2FctMSWmpaqtan8L4T0IMy2v3Nv0v=
+a9sdPU-2FvsCQpw-2BUVtfHeIk45f3YnrVxyi2pJThg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsG=
+jGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2=
+F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLf=
+z8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJA=
+onbFqDJt7iTeSE6oLUNtRNcEFZWmzAWOJvs1h-2BV58Vg7hWkztV-2Ba8Rmrbyym4HIskmfS3Fl=
+VSklGA3oyzZQSsuXLj5MZDS-2F-2FsOvt31-2BSleQbN5T9013-2Bjh7uJ9pGMWaHERxQSeWbKf=
+cj1nuzMcaXyeGmIr0EEgQXqDGSIIaIcSYvHFRWpPvOHEoTB9p9eyiB9d8FGx4MgFkjxnaNO7yD5=
+3Wc3NsaIhJAynxVt0aaKiKNoFSGxwN6L1JE71wH-2BXXtJ4pIKygkMTaYVoaHSDJIIcss7nWAtr=
+ovmafwg21QZCPrcQ-3D-3D"><span style=3D"font-weight:400;">Farhad Manjoo writ=
+es that GeoCities deserves more credit than it gets</span></a><span style=
+=3D"font-weight:400;"> for this reimagination of what the web could provide=
+ to users. =E2=80=9CToday, few of us think of the Web as a simple source fo=
+r information; it=E2=80=99s also a place for dissemination, the place where=
+ we share life=E2=80=99s most intimate details. In other words, it=E2=80=99=
+s for =E2=80=98habitation=E2=80=99=E2=80=94and GeoCities helped start that =
+trend.=E2=80=9D</span></p>
+<p class=3D"last"><span style=3D"font-weight:400;">It also gave people with=
+out any expertise a place to both play and learn. Adam Ostrow, a digital me=
+dia exec, built his first GeoCities page in celebration of Atlanta Braves l=
+egend Chipper Jones. =E2=80=9CBuilding websites, creating digital content a=
+nd understanding how to engage online communities=E2=80=A6 Having these exp=
+eriences as a kid, on GeoCities, made those skills second nature to me,=E2=
+=80=9D Ostrow tells Quartz. </span></p>
+</div></div><div class=3D"obsession-card auto"><figure class=3D"obsession-h=
+ero"><div class=3D"obsession-hero-image" style=3D"background-image: url(htt=
+ps://qzprod.files.wordpress.com/2018/01/911-geocities.jpg?quality=3D80&#038=
+;strip=3Dall);"></div></figure><div class=3D"obsession-card-content"><h2 cl=
+ass=3D"obsession-card-title">In the cul-de-sac<hr /></h2><p class=3D"first"=
+><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fmxDT=
+HeZZdSbveg3-2BHD9UK0Ovr-2Bkk176hLkIq8kmfle5hrqkge_B-2BIbELky-2FkwH3aVVxNxsG=
+jGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2=
+F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLf=
+z8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJA=
+onbFqDJt7iTeSE6oLUNtRNcEmd3fz6M0yoNyvS9kSIObjH7w38cLti5lu4ml5XnetK-2FNo5I9o=
+2WUPDVIrjgOujhEpW1ss2eKqbozZ6-2FLe5usibDq40M7Pf-2FAEnOoBVDO03-2BFeM18liqbB1=
+vbrhwaozdlrk92ZFBJASiyymDtWqOBxoMsCvKu6ftlsdtttMHM6IgrhNdr9vqlYsOle5d4jzMXY=
+IJyZPg-2BJInWL3tpc5dOM7U2AxtZfANo3pckbYyJGNRy1gLo0-2BrsqdLCjYkBdqyVFSISuCZH=
+XpKXwsR-2BHbCaCQ-3D-3D"><span style=3D"font-weight:400;">One Terabyte of Ki=
+lobyte Age</span></a><span style=3D"font-weight:400;">, a database of prese=
+rved screenshots from GeoCities sites created by artists Olia Lialina and D=
+ragan Espenschied, contains a massive data dump of GeoCities home pages lov=
+ingly preserved by the </span><a href=3D"http://email-tracking.qz.com/wf/cl=
+ick?upn=3Dpu9n0ps8hGF44zTMfA2zQZAL2vrOOxpw3xyU-2Bh6WiDTshc2nBSWtgrAMath2K8g=
+M_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9yg=
+y0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcuf=
+SBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPU=
+Q4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEdcUHBYMrNkjUi-2B9itTfkxz=
+vcivfg5XhQJKllg9hx33NPFhCVlD0OTG-2BFvu-2BwwcqJwJMv2ScGW7IVEudISpphXUXiqARWw=
+E-2FmyDwDhGDuvY9jU-2F-2BahZT3MZKOSkl4H-2FbOcBM0jLQXqz-2BKxy3GABvfp9TcXLtW6V=
+uaNsK0-2BhOaVl4LQ6uTCAJDKQRmxKiyC9c5sc9CQJPpKBGd-2BOm0ljsSs-2BQR68EMfli2k6m=
+n2s-2Byg1zU4mtYDM-2FXLTrnggbNjLk-2BU0fERDV8bw5PqdmI4bD6Sg-3D-3D"><span styl=
+e=3D"font-weight:400;">Archive Team</span></a><span style=3D"font-weight:40=
+0;">. </span></p>
+<p><span style=3D"font-weight:400;">Some of its compilations, like this </s=
+pan><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fm=
+xDTHeZZdSbveg3-2BHD9UK0Ovr-2Bkk5yFqJAETDXMd23rXWwHDl76WsktMaW0vHzh6GMr-2F19=
+A-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGW=
+CXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnW=
+vpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF=
+8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEkOysy6bcrYZCFeD6o4=
+j-2FSGhQCBlAdNqvjm-2FNosk3jHoRMBacoDYPdqfKPsY1YS8l8uH8JTqY-2BNgQIT9HFNJAFdu=
+0pGlkOsaeH9iHkIM8eyeDxG-2BPc-2BcXz-2BnMKDvN1XMXownUI3h2H6nvtfie3nY-2Bh5CqAP=
+1l1r95P1PjoycIpNH2i5mkqxwAl3Nd3vhPAjeKK0WJer3B6Vvj33gKKRXnTiG1ub1CpdVD72hPM=
+Qhe-2BmV5BJdQrTaQw-2BsD3l354rcuEoORfRYlZQVNjUf7V4nVuA-3D-3D"><span style=3D=
+"font-weight:400;">collection of screenshots that catch the first days and =
+weeks after 9/11</span></a><span style=3D"font-weight:400;">, are profound =
+portraits of the moment. Others archive the granular customization options =
+GeoCities offered. Clicking through to a GeoCities page could transform you=
+r cursor from an arrow or a gloved hand to a magic wand; a RealPlayer plug-=
+in piped in MIDI versions of the site owner=E2=80=99s favorite tunes. Pages=
+ could be built like digital houses: Click on a door, and you=E2=80=99d be =
+led into a hallway with hyperlinked stairs and rooms. </span></p>
+<p class=3D"last">It was all a very stark contrast to today=E2=80=99s sleek=
+ plug-and-play web hosting platforms and the tepid blue of Facebook=E2=80=
+=99s feed. <span style=3D"font-weight:400;">=E2=80=9CUsers have found new w=
+ays to work with the web of today, especially social media, but there is al=
+most no sense of ownership anymore,=E2=80=9D Lialina told Quartz. </span></=
+p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">take me down this =F0=9F=90=
+=B0 hole!</div><p class=3D"first last"><span style=3D"font-weight:400;">Tak=
+e a stroll through </span><a href=3D"http://email-tracking.qz.com/wf/click?=
+upn=3DU6PltdZf-2B5-2Ff5eNfkNzaJLTKCC0iZ-2B-2BU80B-2FXIfLVfI-3D_B-2BIbELky-2=
+FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtD=
+bOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B=
+2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2=
+AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEVQMGVHZXVL2-2Fne-2FggHDKQJXh5-2FxXVbGv=
+h6Hm2wP7qu8xCMmL8lAvZ-2B-2B1P-2BsdAMqY-2FU2UwmKiSzucxT-2BTJn8Jz4bWtDdyX2o98=
+DfIpygrHLVSTMfpQLV2z78rsuNkKofznr8iZ0Ct7t-2BBJ-2Fg9iV-2FJpmF8UiPhMFwpTwfj9p=
+jbEQrkWXO3beZruxbXKJXZeZn4JKCDvqLrRoTqQlbhNAVg6MID1tJ9t-2Bi3qr5s9dM2DyOWIPM=
+p-2Fnw2j-2BpbbAiLysaaIbuxCL4wwRujx83NIHKXYw-3D-3D"><span style=3D"font-weig=
+ht:400;">Deleted City</span></a><span style=3D"font-weight:400;">, an inter=
+active map of GeoCities=E2=80=99 40 neighborhoods, created by Richard Vijge=
+n. Zoom into the cyberpunk green and black topography and you=E2=80=99ll se=
+e sub-neighborhoods and the sites themselves, still relatively intact thank=
+s to the Internet Archive.</span></p>
+</div></div><div class=3D"obsession-card video"><figure class=3D"obsession-=
+hero"><a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44z=
+TMfA2zQYCcOwMaxS7-2FxrJxb6KOuCf3UfK-2BxURl7qubIoC-2BXvSS1DV5t3Xo2bdN8u0jFq3=
+GDA-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2Bl=
+GWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fF=
+nWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLw=
+sF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEShTPW0xm2HrsxSS4=
+ONv9A6io4QRWV-2FN7P7jFqdosm-2FaT0Ym9LveKZSXVGDYFbFBXabHpO6gs23WyuciuWfZreSk=
+d4XFJRXdBE90kSSkH4k8Gc-2BI96-2FbTifLk768dO7jvAKBgUhml-2FTWejR7Qmm2ftwGqlg85=
+KqpobHPbx0GJNgXeq6-2BMTS2GScW2oNv2hlRvnu03iKp9aItlgCagcK-2FV7lG9JXV61Q0ljBP=
+A8UALKUNn959C6AGqH6EsirbVtVAb4PK-2Fc9rPkgzQcMqxHdBUaQ-3D-3D"><div class=3D"=
+obsession-hero-image" style=3D"background-image: url(https://qzprod.files.w=
+ordpress.com/2018/01/geocities-video2.jpg?quality=3D80&#038;strip=3Dall);">=
+<div class=3D"play-button"></div></div></a></figure><div class=3D"obsession=
+-card-content"><div class=3D"obsession-card-kicker">Watch this! </div><p cl=
+ass=3D"first last"><span style=3D"font-weight:400;">This =E2=80=9CHow to Bu=
+ild a Web Site Using GeoCities=E2=80=9D video=E2=80=94uploaded the year Geo=
+Cities shut down in the US=E2=80=94is inadvertently hilarious.</span></p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">The way we =F0=9F=92=BB now<=
+/div><p class=3D"first last"><span style=3D"font-weight:400;">Since GeoCiti=
+es swept the =E2=80=98net, web hosting services have only grown more sophis=
+ticated. GoDaddy=E2=80=99s risqu=C3=A9 ads have snared it countless users a=
+nd Squarespace is probably the reason your favorite podcast is still around=
+. But those longing for that sweet Web 1.0 aesthetic need only dust off the=
+ir Earthlink trial disks before heading to </span><a href=3D"http://email-t=
+racking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQeoLtjzZ7qESNCr5PPw8vmc-3=
+D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9yg=
+y0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcuf=
+SBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPU=
+Q4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEJAExMaopaXW5-2BnQQB9pJw6=
+r17S7ZBKtJU4qA8lKiKncHRCGzBtrN5qpstivzV-2FH-2Fic-2FVEtSbhenbLh93wHFVlboykoz=
+c-2B6SPZ93OybXd0JU39uD-2FplnBYlkgYhN8NxtaXsfdD-2FJ5rXkpDKgwh7fO-2FXBEtKpv27=
+MLJd1cUJYYdd7t3Ko5jwI9U9SBXC2zfr9Iu-2FpUWpMOeicqOovGcvcSyrqicxurCFWZhsoLM-2=
+BrXrRyeG9AInaJO4cZxOf6QXyWkjymw6v9H2zT9Pvqw2zpGKA-3D-3D"><span style=3D"fon=
+t-weight:400;">NeoCities</span></a><span style=3D"font-weight:400;"> or </s=
+pan><a href=3D"http://email-tracking.qz.com/wf/click?upn=3D1OPpGnqt1okkVIJp=
+7Qf7-2FoxX-2BfkqcEyjENTaUWymvxk-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQi=
+i2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNox=
+OirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKf=
+L7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6=
+oLUNtRNcEzFugZpy4e57xoBOXLK1cTYUzVObNAsLDnI6DcGQ6qv6Ghgw0iEnwHHm5nkgwrbylg8=
+4cIV-2BNLEUcwb3k1hBPZLnR-2FU846SIHkp-2FvU6yTAV6WOHBbnqSA9Hpa3Occwt7EEyrlbpF=
+j1NFlo01T9xrC9rdogfIrgJEdq4tRrSy-2FSTRaiAmm2mabSDAa-2FYlr9dSnxptzQlC1HLVwhT=
+ZZaEQHYEBZB1oDqfS9lQaBE6c3INfZHEPy2IDXQ9wISRQ-2B649SLdq9vVeLWYHp3rm6kcITYw-=
+3D-3D"><span style=3D"font-weight:400;">GeoCities.ws</span></a><span style=
+=3D"font-weight:400;">=E2=80=94two prominent platforms that explicitly evok=
+e the GeoCities sites of yore.</span></p>
+</div></div><div class=3D"obsession-card poll"><figure class=3D"obsession-h=
+ero"><div class=3D"obsession-hero-image" style=3D"background-image: url(htt=
+ps://qzprod.files.wordpress.com/2018/01/geocities-poll.jpg?quality=3D80&#03=
+8;strip=3Dall);"><table><tr><td><div class=3D"obsession-card-kicker">Poll <=
+/div><h2 class=3D"obsession-hero-title">How do you feel about GeoCities now=
+?</h2></td></tr></table></div></figure><input type=3D"checkbox" id=3D"poll-=
+12-vote-control" checked=3D"checked"/><div class=3D"vote-btn"><a clicktrack=
+ing=3D"on" class=3D"obsession-card-cta" href=3D"http://email-tracking.qz.co=
+m/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQUoNA60RBB1-2B4W9GE8J6-2F248dWA-2F3gyd=
+mJ-2BctNkEjWUx_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2=
+B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCO=
+Ig0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1=
+DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEDh-2BkEofB7=
+jNxznLLaQzkIrzbfSFpGz4DttwJVniTQD71Z-2B4hSlLIIgbT-2FObq5qluzhptFxLftDVE-2BQ=
+2Tgj-2Ft8R-2F0Kh-2BK2bYXxNk811cEi006-2BM71kfaG8gWHg-2BgshCGAcAAq7LgU2EttAUA=
+vpF2O3Nqyswyjwx1S7Lbf4DoIYkIEwnRkS3R6dtomH1McMUxXeIbOhesN-2FysYnizl5Ej8xDfc=
+koD6OKcOdHcZ5EFoLNetRY8nj-2F31uHiS4dBnIze3OzCTEe22ARgLr-2FxbhSKVaw-3D-3D">C=
+lick here to vote</a></div><div class=3D"vote-options"><input type=3D"radio=
+" name=3D"poll-9921635" id=3D"poll-9921635-radio-45473292"/><input type=3D"=
+radio" name=3D"poll-9921635" id=3D"poll-9921635-radio-45473293"/><input typ=
+e=3D"radio" name=3D"poll-9921635" id=3D"poll-9921635-radio-45473294"/><labe=
+l for=3D"poll-9921635-radio-45473292" id=3D"poll-9921635-answer-45473292" c=
+lass=3D"obsession-poll-answer first">Dialing up my time machine</label><lab=
+el for=3D"poll-9921635-radio-45473293" id=3D"poll-9921635-answer-45473293" =
+class=3D"obsession-poll-answer">At least Facebook gave us the &quot;poke&qu=
+ot;</label><label for=3D"poll-9921635-radio-45473294" id=3D"poll-9921635-an=
+swer-45473294" class=3D"obsession-poll-answer last">What about Angelfire? N=
+ow that was my jam.</label></div></div><div class=3D"obsession-card auto"><=
+div class=3D"obsession-card-content"><div class=3D"obsession-card-kicker">T=
+he fine print </div><p class=3D"first"><span style=3D"font-weight:400;">In =
+yesterday=E2=80=99s poll about <a href=3D"http://email-tracking.qz.com/wf/c=
+lick?upn=3Dpu9n0ps8hGF44zTMfA2zQU0GkxgAXkprbeX5p14xE2g7bUEi-2FkklDjRfZgCyNN=
+2wfiDRsW2AuecsGA72IfTtag-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T2=
+8SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirs=
+bmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS=
+0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUN=
+tRNcEiVxqbdH5Kfkr0QjQqcl2fd44xLg-2BpHaRo4kminxD-2FY5cv6rK1o8D3g-2FTtAgpgiQj=
+PD3bJYQjAGkwS3AoAjcIi8ItTlxPRb1wUS3IqRKoFvnrz-2FLeXHEONA45PLl9ROjJdPb8A5FAn=
+IGzuqLyfSh7k-2FLC7oYuQgvjVR-2F4J-2FkmNaIrZUjR07eWZSEvujOD9QITZe7NxzbcpHv73J=
+vEjpS5XQhKto3tqQZfxzOWgX0FBZNekqoqLoMAYeam8hqENFkzZDCOaWx9akMB976Icdhe-2Bw-=
+3D-3D">fat-finger syndrome</a>, 42% of you said you=E2=80=99re =E2=80=9Cbri=
+mming with newfound admiration=E2=80=9D for your pinky finger.</span></p>
+<p><span style=3D"font-weight:400;">Today=E2=80=99s email was written by <a=
+ href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQa=
+MyMA3xQfQIFy09-2FhxxoSlk95966hdvf48TvZ89thTs_B-2BIbELky-2FkwH3aVVxNxsGjGeHH=
+lwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-=
+2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8R=
+xjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFq=
+DJt7iTeSE6oLUNtRNcE6ckfCy9RTJWa6GnvbmdAejGGa-2BgFmt4KNz4-2FCZ9jR4UiKwmwF8v-=
+2Fvj-2BYwG96lE2zFSIu7Srh8SQjEEPlSUwoPlhFAu5ndaJd7Gw3QhHFDbKHZwzDFOQDnE1I92L=
+5PvMm-2BQ-2FtfSmU5vLxrzjZ8R207LFPPlBEn4rmsk-2BALidJvN10p67ssRrSRTHCkkPfwStO=
+QLjUgp-2Fdfkdgi3f-2BZ4jB-2FX4yR5Md199ZWMdTndIal3uul0-2Bkf1vHQ8QZcuY98a13EWl=
+FX3W3EB1kI6N6D9kTxQ-3D-3D">April Siese</a>.</span></p>
+<figure class=3D"inline-image alignnone"><img src=3D"https://qzprod.files.w=
+ordpress.com/2018/01/giphy-85.gif?w=3D640" alt=3D"giphy (85)" /></figure>
+<p class=3D"last"><em><span style=3D"font-weight:400;">Images: <a href=3D"h=
+ttp://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fmxDTHeZZdSbveg3-2=
+BHD9UK0Ovr-2BkkqXZzjuuNLrDw0qeqyR6-2BCfk8Ht08BbsRW-2BK38vXGrl-2BnzG3FePx6tF=
+yAUnmZNkYE-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B=
+-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOI=
+g0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1D=
+RRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEOu5RGFVf22zy=
+i3i0IGR1o-2B7HlWTl2FwuHe5wZ3dHR6pKvW59FjyEv-2FtmcZUtjl3xBfITJMUK-2BvrkHDeg7=
+hlnhsI-2BySI9pSpn3FQr-2FvWWP4jJ0nk55SDR1qxeT-2FySi8TqEZ-2FXqaG7Z8i-2FfBjxiN=
+t9DdYlINsfbiDtXt8nV5-2F8jk9R4n5gtZMWFzRAx2LDQPo2Ccb0VKedlc-2FOB9R5B7zd-2Fod=
+AN65Lsq3eUT9b0lNkUcGZVmHLeHh7jFvz3lt4XqfuaU-2F6Cfavj2FSEFDKzySCzA-3D-3D">On=
+e Terabyte of Kilobyte Age (Arvin=E2=80=99s homepage),</a></span> <a href=
+=3D"http://email-tracking.qz.com/wf/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOJbJzAv=
+tZ4AWfhlOXMYVETeJHUb5YKU3F-2FbySr6dQzgB1VEH89O9l52XYjh5RhxMloH4LsV-2BOzAObi=
+-2BjZj7vrapnrNPNjvsu90pE5fr1vSwM_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2=
+T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOi=
+rsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7=
+JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oL=
+UNtRNcEA7cWgsezzNl3pNzmzdroWTO-2F0CnKu1KjXqpHVYNoXhOqQ4v45S4nqsPsIH65OvCc8M=
+diCzk3vqtxgGxltWgBUUo-2FpOh3xk1p-2BXB0akCeBs7aIZ2VPZzPEKI5iMqsPyIO0UegUgSe9=
+TTX3NqVI6J4hrvta1SparLZfV2yfkQk1JAdaRiYqfwDajU7v2yBg70teROwlN1S9gg4YVBv9KPX=
+gxuts4AZoThPppxLQXMI1u6ai-2Ft48EA552n7tbMadqlqtNcRa9SisCwCK1XgQVFAkg-3D-3D"=
+>Wayback Machine (Area51)</a>, <a href=3D"http://email-tracking.qz.com/wf/c=
+lick?upn=3DnnqZ0gDDZwEq6FtFfmnIOJbJzAvtZ4AWfhlOXMYVETcUNE7ZxFdChAw0j4g-2B3P=
+WLzUBDSw-2FRfUfxWzBRJ9Yj-2Fg-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQi=
+i2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNox=
+OirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKf=
+L7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6=
+oLUNtRNcE3-2BXvcRlFNQTBGgmdfeb93R278O-2BngeF7U5OMwqLsY4bZMLB4S-2BGldoqrzNs6=
+4-2BICIP1lA9mISnjLrTpMGWUE7yKXSCfFLTpJ4GsBA9eXtZqEsA12Lb-2BYTFhakxJx-2FlQ6B=
+Ea1SvXIPKkQTkeeHGGI7bVvlqEMAcWC-2FIzD1le144UU9jsnujcRNy1bPOTO0SN4nxmXFNpFuc=
+nYK-2FJ0AwfM25CBPi06xI16zNC7Bwnk2vfxrwPgZ6A0-2F5T7eF0qCLwwuwcXNr4D4qov2fxhX=
+H73RQ-3D-3D">Wayback Machine (welcome page),</a> </em><em><span class=3D"s1=
+"><a href=3D"http://email-tracking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fmxD=
+THeZZdSbveg3-2BHD9UK0Ovr-2Bkk5yFqJAETDXMd23rXWwHDl76WsktMaW0vHzh6GMr-2F19A-=
+3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCX=
+a9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvp=
+UcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8B=
+HmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEExDDS4UORbq-2BfUyK6i=
+e14S75QdflkWaEP6Ub59iIty56AhieDffv628rENYzMuMgyVzl4nBzkLHQuG8TVPbcBp7EdAp7N=
+s4FPO0Y-2B7f7lxsH5qhMrKtqLDmROkDNxKqIWb161R2qIxe-2BHmGO-2FUHReWIsTjYYNRS0F8=
+jU-2Bn7N0tkg6stR-2Fq3c5MTaea0sQrW3FXWgNPJiaIg6R7CQ0ax9CeqMht4oR0ZjBUs-2B7Kw=
+rvIM0nJlUfxxAe-2FLzlTGYyx5-2Fg8rNBi9Q1qrwHXDqO6w-2FnA-3D-3D">One Terabyte o=
+f Kilobyte Age (9/11 pages)</a>, <a href=3D"http://email-tracking.qz.com/wf=
+/click?upn=3DnnqZ0gDDZwEq6FtFfmnIOPfXm2Ulwjs2buomtHJw1a1PDAP-2B8WhaDb863eMv=
+gTNoIp9JoZDuppQbpuLAJLSV3Q-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2=
+T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOi=
+rsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7=
+JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oL=
+UNtRNcE-2FFj6WpRVxssnaQ3kt55QFZqNN8fAbUePetkuCtULZlHD0nRF7gzwpAqcMLzmDjnfiY=
+5BHQ1-2FKw0xG-2FlPlSG-2F5uiMm6Tyo-2B0fBh9aaXAwP0cBe8vRXFbWLsGnKhvJ4YfSIpxw9=
+NSGNmAu9-2FPmjXyJsTEHzJVwstA3nOZOJOYOFT1w1z8M466GN1I6ddYIUXrzqAFjHlH153q-2B=
+gbYvYL9mbqLFRr5La1CpydWZPobgJ16BTkyRpFxtAlxwa7PCtdYQpqVtsxCIvIuuMvAq108WqA-=
+3D-3D">Text Files (construction man),</a> </span><a href=3D"http://email-tr=
+acking.qz.com/wf/click?upn=3DM9ZiF7udzYOT87fmxDTHeZZdSbveg3-2BHD9UK0Ovr-2Bk=
+kqXZzjuuNLrDw0qeqyR6-2BCO69qxy9j3ybo3h5VKGNP6-2FfE5t4xFF5JKS4LVJQ2LCg-3D_B-=
+2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0Zg=
+QnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXA=
+wOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C8=
+9QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEp1nruivSp21duV9nBIX-2FmODWwu=
+pqua1bK4HxEmo070mAi9dfPcq0w2w2-2BI4mg-2FySBv716Jtc9Sa8JLoJApuCfwAvQt8LhV5N4=
+nJ-2F1G6-2FoSgwrUE2bA7w1gD-2FC7UqN39eewmYiPsrSHlwerjRwl58-2FYlaWgeVZLXYV4ou=
+X7JRAXZOtm6NsXjGgo68AG4CXBr0slQ90gJ6TLIBeT92IZswdIEbrbeBibPsgnD48KV4rxxSs5L=
+M3732sVkoQj9QAv8-2FF7UqN9FxWBEOzDklCs6o6g-3D-3D">One Terabyte of Kilobyte A=
+ge (web colors)</a> </em></p>
+</div></div><div class=3D"obsession-card auto"><div class=3D"obsession-card=
+-content"><div class=3D"obsession-card-kicker">Sound off </div><p class=3D"=
+first">=E2=9C=8F=EF=B8=8F <a href=3D"mailto:obsession%2Bfeedback@qz.com?cc=
+=3D&amp;subject=3DThoughts%20about%20the%20lost%20age%20of%20the%20internet=
+.&amp;body=3D">What did you think of today=E2=80=99s email?</a></p>
+<p>=F0=9F=92=A1 <a href=3D"mailto:obsession%2Bideas@qz.com?cc=3D&amp;subjec=
+t=3DObsess%20over%20this%20next.&amp;body=3D">What should we obsess over ne=
+xt?</a></p>
+<p>=F0=9F=91=80 <a href=3D"mailto:obsession%2Bprompt@qz.com?cc=3D&amp;subje=
+ct=3DNot%20just%20the%20yellow%20ones.%20&amp;body=3D">Send us a snapshot o=
+f the next Post-it note you see.</a></p>
+<p class=3D"last">=F0=9F=93=AC <a href=3D"mailto:replace_with_friends_email=
+@qz.com?cc=3Dobsession%2Bforward@qz.com&amp;subject=3DQuartz%20Obsession%20=
+about%20GeoCities&amp;body=3DThought%20you%27d%20enjoy.%20%0A%0AEmail%20at%=
+20http%3A%2F%2Fqz.com%2Femail%2Fquartz-obsession%2F1184093%2F%0ASign%20up%2=
+0for%20the%20newsletter%20at%20http%3A%2F%2Fqz.com%2Fquartz-obsession">Forw=
+ard this email to a friend</a></p>
+</div></div><!--[if mso | IE]></div><![endif]--><div id=3D"obsession-footer=
+"><div class=3D"obsession-footer-content"><p>The correct answer to the quiz=
+ is <em>Kenny Rogers Roasters Fan Page</em>.</p><p>Enjoying the Quartz Obse=
+ssion? <a href=3D"http://email-tracking.qz.com/wf/click?upn=3Dpu9n0ps8hGF44=
+zTMfA2zQU0GkxgAXkprbeX5p14xE2g7bUEi-2FkklDjRfZgCyNN2w0E4khKFPzKgjrx-2FUe5PP=
+nQ-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlG=
+WCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFn=
+WvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLws=
+F8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE4c4dm-2BVkZKwhI3j=
+OKVjnB354XxrKFMabCXLb6fdcZEDiZ7QO2lZDT13K3vqHrYc89V7zWJ4e7vQspB2kzesweKYvNc=
+JRiEXhg2ku9Xhz9PQ0gVYoKbBt9QHEji3oQgbAAOpO0WFODd5nS4zLa7-2FjdDJgpSshPycYpbL=
+h25cwUG7rReumKu5uTaHrgFkj94bgV-2BtiE70OD2Lp0Gkp8XQfWc-2B-2BNzsz5e1gJoqmJBVS=
+6fodR-2FCLU2A6oSKS8s8L5nwTUcZlDdZ0ig05ubBo72x1-2FQ-3D-3D" target=3D"_blank"=
+>Send this link</a> to a friend!</p><p>Not enjoying it? No worries. <a href=
+=3D"http://email-tracking.qz.com/asm/unsubscribe/?user_id=3D5998231&data=3D=
+Nam_7Ix7G0knEzepz9fGsu0CpYIwFGcC9L0KE6AEK8BMFKAa9XlbU4wNj6lSGQqQdCxWZ4ZK0ab=
+7khMWBDDX_lMN-1O_GTBwJEqOLxpQaOuNh9AZ71O6kEDqkINn-cKyyYRQ9n4KXdPtyswASCUf0Z=
+KOZIiUU1cS7QLibVHMckH5pwzFaRRqY3x2u-TX8eurTAPATUQpuB0R2qakzj6ltgBcpVGMSiimJ=
+y_rHhAoVEnajbPGWZUwdw6Fc193mWMXhhsgkQjvv7dJHLbtaYrHqPKrtQgESh2lHxNJK0VaG6Z-=
+O4ntXXkKjEOlqCo_VqEGMXqp84bHWqwGe0UOmyYOoWArOVl3fUr2BrLFuVkN3c1WWKZHQjoKCi2=
+u5YOELa6zfZIkwRESvzO9tgXY4y5qKyBVoFs-PMIxL-nZ6PD-5P6ZC9yCrwXrxvFKJJcGeieAMz=
+K41wUdh26KugCgoVETe7lUaoiTYyPbL_vlwVPkLyG53NZYaMDaqgUTms_h-L_v6KQkD0VfoIifa=
+7Pgel5VLEOb1J3UkWwAvz3Z9S9Az_uYbgAV3Qgo_Bb2RC4OKoQ0TFtzwHkx5LbWcl-Sd89FSVwO=
+ZdgHFvKKryGi3jRO-iFLoB-lM2m7IWYieLCjQfTaX_Gwr5hYJckrsZIxJTR4mw=3D=3D" targe=
+t=3D"_blank">Click here</a> to unsubscribe.</p><p class=3D"last">Quartz | 6=
+75 Avenue of the Americas, 4th Fl | New York, NY 10011 | United States</p><=
+/div></div><div id=3D"obsession-share-footer"><div class=3D"obsession-foote=
+r-content"><table class=3D"obsession-card-share"><tr><td>Share this email</=
+td><td class=3D"share-buttons"><a class=3D"icon" href=3D"http://email-track=
+ing.qz.com/wf/click?upn=3Dpu9n0ps8hGF44zTMfA2zQWfehDGDmGDyPcNZSKiirXWRCIwIi=
+HU-2BmXTnqQ0q4tAOphQ2eg2HzBf-2BbWN2DH2O1Q8NgEX3n-2BYLiCaOYGp8Bgjr6zKXTGN47R=
+H6DKf3OvZEWuIaV3xiy3TU06s6-2BwFLMLnTDtdpDvpaLFswpEgnBmQ-3D_B-2BIbELky-2FkwH=
+3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeY=
+zqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6=
+bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz=
+3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEuZQ4fTAxYSa1dbH3sWN9lsDo-2FsG8P2m7ekmQ-2BC=
+qPC2De-2FN-2FWZ-2F-2Bw02UPG6JqlgFrz-2F2pQzCdbXEs8163MNCimTKhxXmGwAoyaqgWlh-=
+2BO97sHLKtvkLmL4H05BQTXX1X93Fwgi5l3ja8d5DFlWmrAy-2BcGB3czF-2BQjQuoPL8-2Bblc=
+4VIGULxq9Yhy9lifdJ3B4sEENyWGXMb-2FXOjftfsXuyi7sNRr2FgSInBiHZZc1sXA1KtwDFpFR=
+A68lW8SSgQLVWhaZaa7Gnlft6-2BHCT5nUX7Q-3D-3D"><img src=3D"https://s2.wp.com/=
+wp-content/themes/vip/qz-api/lib/plugins/qz-obsession-email/images/icons/tw=
+itter.png"></a><a class=3D"icon" href=3D"http://email-tracking.qz.com/wf/cl=
+ick?upn=3Dpu9n0ps8hGF44zTMfA2zQVLMdBkdJn1pj4mDoC0WWsPs599DYa8KAKKpdfeNZnAeJ=
+sXxgJq5jGxiHCGHmhRiqB43hsQTf0I-2FV298vlOW8Kql-2FYLg1ZtNd-2Bk0t1uIP6JbgRDHQG=
+M814N9Pyp1taxX9g-3D-3D_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8=
+-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXs=
+W3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap=
+-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcE5Ie=
+MnfyK5kHp5LSphJxri8exkcCI4XEj3cVYSRtPL17poOPBLEikjkOSO9fw2HMFxCsIvKjxABtN24=
+QCDsBF6HSOi-2FAtaAFsqW6vJLGdMz-2BHmcYpoiJLzHcPgsAzjSoHNJPakaN3jMbn1mdUUljys=
+qkQBL6542XaNb6rEBgP4dqCJVZfU4PPRxLh9krvIB71Humraj238YfDkwPAdGy-2B1WySVE9srH=
+5GbbFK0fchZhArGqa8PwCHlbvXkGh0okqq1e-2FEGRruJ46vpcMqgfRplw-3D-3D"><img src=
+=3D"https://s0.wp.com/wp-content/themes/vip/qz-api/lib/plugins/qz-obsession=
+-email/images/icons/facebook.png"></a><a class=3D"icon" href=3D"http://emai=
+l-tracking.qz.com/wf/click?upn=3D-2BAxocyp4nkowOxGUE3zlryaclnv-2Be2XR88Y6yB=
+ACYj10HTvYdGjj4BatGjrEm9Nq4BhmSziMuXZjUFBfqkoMMcUi0x-2FuhB8s7j-2BnRZlOIKvUq=
+WcMvqtBDwB5tcFM9oXrVXFdO8JtKnx0YaMPipFQs902P4AMNyPO9k55cuARsqPeQ1sDMPscL8x2=
+Gwl2Tiao_B-2BIbELky-2FkwH3aVVxNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlG=
+WCXa9ygy0ZgQnBKmfDXtDbOeYzqwzpoh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFn=
+WvpUcufSBXAwOxg-2B11B2Ly6bpdmMeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLws=
+F8BHmPUQ4C89QC88iMjf2AHfz3bM22VAJAonbFqDJt7iTeSE6oLUNtRNcEgvgJjWe2PU-2BPrNT=
+M3qkcZoN4-2BmmUVKaMbMPHYq-2F4-2BxLSWkHvtMrxs7PRBxbEQ8fSmafqtvxVROfWbH6kckXD=
+VqtQeKQFcx8Xu-2FiVmLAHrv6ogIy6RwifgYKw21OVFkw8TVduik-2BlmLWmYs6sEVZrillTeRf=
+Zmc1DYc9lBVUJDvXrQOZMWAcwgi1CLLuBWC8vkm3QxSYRlgE-2BKpodhweOpFg-2BhfgjqFEsBo=
+zQDnvZ-2FeaW0Gn3cF-2BoQxDnVAq97mLgXB4U9ulE-2B-2BqNFCaVLqqjrw-3D-3D"><img sr=
+c=3D"https://s2.wp.com/wp-content/themes/vip/qz-api/lib/plugins/qz-obsessio=
+n-email/images/icons/pinterest.png"></a><a class=3D"icon" href=3D"whatsapp:=
+//send?text=3DGeoCities"><img src=3D"https://s2.wp.com/wp-content/themes/vi=
+p/qz-api/lib/plugins/qz-obsession-email/images/icons/whatsapp.png"></a><a c=
+lass=3D"icon" href=3D"mailto:?subject=3DGeoCities&body=3Dhttps%3A%2F%2Fqz.c=
+om%2Femail%2Fquartz-obsession%2F1184546%2F"><img src=3D"https://s2.wp.com/w=
+p-content/themes/vip/qz-api/lib/plugins/qz-obsession-email/images/icons/ema=
+il.png"></a></td></tr></table></div></div></div><!--[if mso | IE]></td></tr=
+></table><![endif]-->
+<img src=3D"http://email-tracking.qz.com/wf/open?upn=3DB-2BIbELky-2FkwH3aVV=
+xNxsGjGeHHlwj7tYCPQii2T28SoxpoZ8-2BF3z-2B-2BlGWCXa9ygy0ZgQnBKmfDXtDbOeYzqwz=
+poh-2F2ud-2BUEq5oNoxOirsbmQulyXsW3eQrTCOIg0fFnWvpUcufSBXAwOxg-2B11B2Ly6bpdm=
+MeQLfz8X8RxjMf296UKfL7JS0BS5lXap-2FJMAj1DRRLwsF8BHmPUQ4C89QC88iMjf2AHfz3bM2=
+2VAJAonbFqDJt7iTeSE6oLUNtRNcEOqnEOuR9r0D-2BsTCPeKNps15-2FMqm6h1-2BFJD9UGl70=
+c3FpsG2XvMD0AGhry8S0-2BfUmDKJ1tu4a0s-2FvbBrtHmGTRE5PW8Thhel2-2B-2Be-2BYYyG9=
+4XdpEWOpO4fN1c7pXn4kv9uzxkG-2BKgECgUFOFHDSP3ngXyFXRb54J2Ngz2pwWlmNZ6yZGodUD=
+F23YdgAgMBfzylNrPUV9beduJqMGAyEBKVoK5QpzLrjgTMsW4e7x4tyjHM2EY-2FS12m655Oqj9=
+j-2B16YDPyoB-2F34LOPzcmCLdeVTyw-3D-3D" alt=3D"" width=3D"1" height=3D"1" bo=
+rder=3D"0" style=3D"height:1px !important;width:1px !important;border-width=
+:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-rig=
+ht:0 !important;margin-left:0 !important;padding-top:0 !important;padding-b=
+ottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body></html>
