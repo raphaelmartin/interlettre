@@ -1,10 +1,10 @@
 # projet édito
 
-> F\. EPELBOIN — En France, on est particulièrement inculte en matière d’Internet. À un point inimaginable. J’enseigne en master à Sciences Po et au Celsa, je vois l’élite française et sa compréhension d’Internet, c’est totalement ridicule. En plus, on a des journalistes qui ne comprennent rien à Internet.
-> X. PORTE — Mais qu’est-ce qu’il faut comprendre ?
-> F. EPELBOIN — C’est comme si tu commençais à réaliser que la terre n’est pas plate et que j’étais en train de te parler de la théorie des cordes. C’est à peu près ça qu’il faut comprendre.
+> F\. EPELBOIN — En France, on est particulièrement inculte en matière d’Internet. À un point inimaginable. J’enseigne en master à Sciences Po et au Celsa, je vois l’élite française et sa compréhension d’Internet, c’est totalement ridicule. En plus, on a des journalistes qui ne comprennent rien à Internet.  
+> X. PORTE — Mais qu’est-ce qu’il faut comprendre ?  
+> F. EPELBOIN — C’est comme si tu commençais à réaliser que la terre n’est pas plate et que j’étais en train de te parler de la théorie des cordes. C’est à peu près ça qu’il faut comprendre.  
 
-*Interview entre Xavier de la Porte, journaliste à France Culture, et Fabrice Epelboin, figure du web français, journaliste de reflets.info — revue* L'impossible*, mars 2012*. 
+*Interview entre Xavier de la Porte, journaliste à France Culture, et Fabrice Epelboin, figure du web français, journaliste de reflets.info — revue* L'impossible*,* mars 2012*. 
 
 interlettre est une revue de presse d'information générale, axée sur les SIC/SHS (com., médias, numérique, marketing…).
 
