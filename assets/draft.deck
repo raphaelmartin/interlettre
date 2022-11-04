@@ -1,0 +1,11 @@
+{deck}
+version:1
+card:0
+size:[512,342]
+name:"draft.deck"
+
+{card:home}
+{widgets}
+field1:{"type":"field","size":[118,33],"pos":[44,107],"value":"Ceci est mon sommaire"}
+field2:{"type":"field","size":[100,20],"pos":[206,161]}
+
