@@ -9,6 +9,9 @@ indent: true
 fontsize: 11pt
 papersize: a4
 output: pdf_document
+toc: true
+toc-title: "Sommaire"
+toc-depth: 4
 colorlinks: true
 linkcolor: blue
 urlcolor: blue
@@ -30,6 +33,8 @@ header-includes:
   - \sectionfont{\color{WildStrawberry}}
   - \paragraphfont{\color{VioletRed}}
 ---
+
+\pagebreak
 
 # Maghla: harcèlement, misogynie, montages, obscénités
 #### Parole de streameuses harcelées sur Twitch ([lemonde.fr]{.ul}).
@@ -77,8 +82,16 @@ au Journal Oﬀiciel de l’Union européenne.
 #### Musk’s Twitter will not be the town square the world needs ([]{.ul}).
 #### The bird, the billionaire and the precipice ([]{.ul}).
 #### CNBC a rapporté que toute la team ingénierie de Twitter a été licenciée aujourd’hui ([]{.ul}).
+"That didn’t stop multiple outlets, including CNBC and Bloomberg, from running headlines Friday saying that laid-off Twitter employees were leaving the building carrying boxes."
+This is the part that scares me. It feels like a lot of news media outlets will publish just about anything. It feels like they have no interest at all in whether or not what they're saying is true, or even likely to be true. That's the part that worries me.
+
+> https://www.theverge.com/2022/10/28/23428775/twitter-fake-em... @DanG please change ink, the real story is about mainstream media being hoaxed. ("People are pretending to be laid-off Twitter employees carrying boxes outside of HQ")
+
 #### “Twitter will be forming a content moderation council with diverse viewpoints” ([]{.ul}).
+Twitter will not reinstate banned account until council is formed, Musk says. Twitter will form a content moderation council before making decisions about who gets let back onto the website, Elon Musk tweeted Friday. The council will include "widely diverse viewpoints," Musk wrote in the announcement which comes just hours after he officially acquired the social network for $44 billion and took over as CEO. "No major content decisions or account reinstatements will happen before that council convenes," Musk wrote. Musk has promised to make Twitter a mecca for free speech and had previously indicated that he would reinstate the Twitter account of former President Donald Trump, who was banned from the platform in early 2021 in connection to the January 6 attack on the US Capitol. His stance was in contrast to the company's long standing content moderation policies which permanently banned people for posting hate speech or inciting violence. It remains to be seen how Musk's council will differ from the Twitter Trust and Safety Council, an advisory board composed of independent organizations looking at issues including online harassment, human rights, suicide harassment, human rights, suicide prevention, child sexual explotation and dehumanizations.
+
 #### Algorithmes et liberté d’expression : mais pourquoi s’inquiéter de la prise de pouvoir d’Elon Musk tout en ignorant les multiples problèmes posés avec ou sans lui par les réseaux sociaux ? ([]{.ul}).
+
 
 # L'année passée, record de méthane dans l'atmosphère
 #### Le monde se dirige vers un réchauffement de 2,5°C à la fin du siècle ([]{.ul}).
