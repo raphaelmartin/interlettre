@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20221205T103000Z
+DTEND:20221205T110000Z
+DTSTAMP:20221201T190556Z
+ORGANIZER;CN=admin@asasp-france.org:mailto:admin@asasp-france.org
+UID:sh3sf943n68at3f7u7fi5ii44g@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=admin@asasp-france.org;X-NUM-GUESTS=0:mailto:admin@asasp-france.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=itsraphaelmartin@gmail.com;X-NUM-GUESTS=0:mailto:itsraphaelmartin@gmail
+ .com
+X-MICROSOFT-CDO-OWNERAPPTID:-31930232
+CREATED:20221201T190555Z
+DESCRIPTION:🦺 <u>Merci de bien respecter l'horaire de rendez-vous.</u><ul>
+ <u></u><li><ul><li>Entretien 📞 avec un administrateur en français de notre
+  organisme ASASP\, Assistance Support et Action Sociale à la Population. </
+ li></ul><ul><li><i>Merci d'avoir une bonne couverture réseau !</i></li></ul
+ ><ul><li><b><b>En fonction de notre charge de travail\, i</b>l est possible
+  que l'entretien débute en avance ou en retard\, quoiqu'il arrive\, merci d
+ 'être vigilant à votre téléphone.</b></li></ul><ul><li>Un numéro commençant
+  par 0177xx\, 06xx ou 07xx va vous appeler pour débuter l'entretien. Merci 
+ d'être attentif à votre téléphone. </li></ul><ul><li><u>Durant cet entretie
+ n\, merci de bien être dans un lieu avec un minimum de bruit autour.</u></l
+ i></ul><ul><li>Si vous souhaitez annuler votre rendez-vous\, merci de le fa
+ ire au plus tôt.</li></ul></li>Cordialement.<br><br>ASASP<br><a href="http:
+ //www.asasp-france.org/"><u><u>asasp-france.org</u></u></a><br>En cas d'urg
+ ence\, merci de composer le 112.</ul>\n<br><b>Réservé par</b>\nRaphaël Mart
+ in\nitsraphaelmartin@gmail.com\n0646304168\n<br><b>Identité de votre interl
+ ocuteur chez nous ... </b>\n?
+LAST-MODIFIED:20221201T190555Z
+LOCATION:0646304168
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:DAF DSI ADMIN (Raphaël Martin)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
