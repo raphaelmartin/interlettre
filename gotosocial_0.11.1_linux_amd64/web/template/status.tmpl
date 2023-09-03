@@ -1,0 +1,126 @@
+{{- /*
+// GoToSocial
+// Copyright (C) GoToSocial Authors admin@gotosocial.org
+// SPDX-License-Identifier: AGPL-3.0-or-later
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/ -}}
+
+<section class="author">
+	<a href="{{.Account.URL}}">
+		<img class="avatar" src="{{.Account.Avatar}}" alt="">
+		<span class="displayname">
+			{{if .Account.DisplayName}}
+			{{emojify .Account.Emojis (escape .Account.DisplayName)}}
+			{{else}}
+			{{.Account.Username}}
+			{{end}}
+			<span class="sr-only">.</span>
+		</span>
+		<span class="username">@{{.Account.Username}}<span class="sr-only">, </span>{{acctInstance .Account.Acct}}</span>
+	</a>
+</section>
+<section class="body">
+	<div class="text">
+		{{if .SpoilerText}}
+		<details class="text-spoiler">
+			<summary>
+				<span class="spoiler-text">{{emojify .Emojis (escape .SpoilerText)}}</span>
+				<span class="button" role="button" tabindex="0">Toggle visibility</span>
+			</summary>
+			<div class="content">
+				{{emojify .Emojis (noescape .Content)}}
+			</div>
+		</details>
+		{{else}}
+		<div class="content">
+			{{emojify .Emojis (noescape .Content)}}
+		</div>
+		{{end}}
+	</div>
+	{{with .MediaAttachments}}
+	<div
+		class="media photoswipe-gallery {{(len .) | oddOrEven }}{{if eq (len .) 1}} single{{end}}{{if eq (len .) 2}} double{{end}}">
+		{{range $index, $media := .}}
+		{{with $media}}
+		<div class="media-wrapper">
+			<details class="{{.Type}}-spoiler media-spoiler" {{if not $.Sensitive}}open{{end}}>
+				<summary>
+					<div class="show sensitive button" aria-hidden="true">
+						Show sensitive media
+					</div>
+					<span class="eye button" role="button" tabindex="0" aria-label="Toggle media">
+						<i class="hide fa fa-fw fa-eye-slash" aria-hidden="true"></i>
+						<i class="show fa fa-fw fa-eye" aria-hidden="true"></i>
+					</span>
+
+					{{if eq .Type "video"}}
+					<video {{if .Description}} title="{{.Description}}" {{end}}>
+						<source type="video/mp4" src="{{.URL}}" />
+					</video>
+					{{else}}
+					<img {{if .Description}} title="{{.Description}}" {{end}} src="{{.PreviewURL}}" />
+					{{end}}
+				</summary>
+				{{if eq .Type "video"}}
+				<video class="plyr-video photoswipe-slide" controls {{if .Description}}alt="{{.Description}}"
+					title="{{.Description}}" {{end}} data-pswp-index="{{$index}}" data-pswp-width="{{.Meta.Original.Width}}px"
+					data-pswp-height="{{.Meta.Original.Height}}px">
+					<source type="video/mp4" src="{{.URL}}" />
+				</video>
+				{{else}}
+				<a class="photoswipe-slide" href="{{.URL}}" target="_blank" {{if .Description}}title="{{.Description}}" {{end}}
+					data-pswp-width="{{.Meta.Original.Width}}px" data-pswp-height="{{.Meta.Original.Height}}px"
+					data-cropped="true">
+					<img src="{{.PreviewURL}}" {{if .Description}}alt="{{.Description}}" {{end}} />
+				</a>
+				{{end}}
+			</details>
+		</div>
+		{{end}}
+		{{end}}
+	</div>
+	{{end}}
+</section>
+<aside class="info">
+	<time datetime="{{.CreatedAt}}">{{.CreatedAt | timestampPrecise}}</time>
+	<div class="stats" role="group">
+		<div>
+			<span aria-hidden="true">
+				<i class="fa fa-reply-all"></i> {{.RepliesCount}}
+			</span>
+			<span class="sr-only">{{.RepliesCount}} {{if .RepliesCount | eq 1}}reply{{else}}replies{{end}}</span>
+		</div>
+		<div>
+			<span aria-hidden="true">
+				<i class="fa fa-star"></i> {{.FavouritesCount}}
+			</span>
+			<span class="sr-only">{{.FavouritesCount}} favourite{{if .FavouritesCount | eq 1 | not}}s{{end}}</span>
+		</div>
+		<div>
+			<span aria-hidden="true">
+				<i class="fa fa-retweet"></i> {{.ReblogsCount}}
+			</span>
+			<span class="sr-only">{{.ReblogsCount}} boost{{if .ReblogsCount | eq 1 | not}}s{{end}}</span>
+		</div>
+		{{if .Pinned}}
+		<div>
+			<i class="fa fa-thumb-tack" aria-hidden="true"></i>
+			<span class="sr-only">pinned</span>
+		</div>
+		{{end}}
+	</div>
+</aside>
+<a data-nosnippet href="{{.URL}}" class="toot-link">Open
+	thread</a>
